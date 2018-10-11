@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","sources":["main.scss","_variables.scss","_typography.scss"],"sourcesContent":["@import \"variables\";\n@import \"typography\";","",""],"names":[],"mappings":"","sourceRoot":"/"}
