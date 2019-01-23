@@ -1,0 +1,16 @@
+.header {
+  padding: 15px 0;
+}
+
+.header__container {
+  align-items: center;
+  display: flex;
+}
+
+.header__logo {
+  margin: 0;
+
+  img {
+    display: block;
+  }
+}

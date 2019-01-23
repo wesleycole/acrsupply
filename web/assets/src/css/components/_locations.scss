@@ -1,0 +1,18 @@
+.locations-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.location {
+  span {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+#locations-map {
+  height: 450px;
+  margin-bottom: 30px;
+  width: 100%;
+}

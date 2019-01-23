@@ -1,0 +1,21 @@
+.menu {
+  margin-left: auto;
+}
+
+.menu__list {
+  @extend %clear-list;
+  align-items: center;
+  display: flex;
+}
+
+.menu__list-item {
+  margin-left: 20px;
+}
+
+.menu__list-item-link {
+  color: $black;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}

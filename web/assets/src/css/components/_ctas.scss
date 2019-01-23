@@ -1,0 +1,36 @@
+.cta-blocks {
+  display: flex;
+  margin-top: 100px;
+}
+
+.cta-blocks__block {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 60px;
+  text-align: center;
+  width: 50%;
+
+  &--red {
+    background-color: $red-60;
+  }
+
+  &--blue {
+    background-color: $blue-60;
+  }
+}
+
+.cta-blocks__block-title {
+  font-size: 28px;
+  margin: 0;
+
+  @include mediaQuery(tablet-and-up) {
+    font-size: 48px;
+  }
+}
+
+.cta-blocks__block-description {
+  margin-bottom: 30px;
+}

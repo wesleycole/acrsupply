@@ -9,8 +9,88 @@
  # be set to the Homepage entry.
 -#}
 
+{% set promotionsQuery = craft.entries()
+	.section('promotions')
+	.orderBy('postDate desc')
+	.limit(3) %}
+
+{% set promotions = promotionsQuery.all() %}
+
+{% set notification = craft.entries()
+	.section('notifications')
+	.one() %}
+
+{% set testimonial = craft.entries()
+	.section('testimonials')
+	.one() %}
+
 {% extends "_layouts/site" %}
 
 {% block main %}
-	<h1>Home</h1>
+	<div class="promotions">
+		{% for entry in promotions %}
+			<div class="promotions__item">
+				Promotion
+			</div>
+		{% endfor %}
+	</div>
+
+	<div class="notification">
+		<div class="container">
+			<p class="notification__text">{{notification.notificationText | raw}}</p>
+			{{notification.notificationLink.getLink({
+				class: 'button notification__link'
+			})}}
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="services">
+			<div class="section-header">
+				<h2 class="section-header__title">{{entry.servicesTitle}}</h2>
+				<p class="section-header__description">{{entry.servicesDescription}}</p>
+			</div>
+
+			<div class="services-blocks">
+				{% for block in entry.services.all() %}
+					<div class="service-blocks__block">
+						<h4 class="service-blocks__block-title">{{block.serviceTitle}}</h4>
+						<p class="service-blocks__block-description">{{block.serviceDescription}}</p>
+						{{block.serviceLink.getLink({
+							class: 'service-blocks__block-link'
+						})}}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="cta-blocks">
+		{% for block in entry.ctas.all() %}
+			<div
+				class="cta-blocks__block cta-blocks__block--{{block.callToActionBackgroundColor}}">
+				<h4 class="cta-blocks__block-title">{{block.callToActionTitle}}</h4>
+				<p class="cta-blocks__block-description">{{block.callToActionDescription}}</p>
+				{{block.callToActionLink.getLink({
+					class: 'cta-blocks__block-link button button--white button--large'
+				})}}
+			</div>
+		{% endfor %}
+	</div>
+
+	{% if testimonial %}
+		<div class="container">
+				<div class="testimonials">
+					<div class="testimonials__block">
+							<div class="testimonial">
+								<p class="testimonial__content">{{testimonial.testimonalcontent}}</p>
+								<p class="testimonial__author">{{testimonial.testimonialAuthor}}</p>
+							</div>
+					</div>
+					<div class="testimonials__block testimonials-cta">
+						<h3 class="testimonials-cta__title"><span>We Love Our Customers</span>Testimonials</h3>
+						<a class="button button--large">Read More Testimonials</a>
+					</div>
+				</div>
+		</div>
+	{% endif %}
 {% endblock %}

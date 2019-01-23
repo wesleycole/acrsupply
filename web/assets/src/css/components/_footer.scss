@@ -1,0 +1,29 @@
+.footer {
+  padding: 60px 0;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer-block {
+  width: 30%;
+}
+
+.footer-tagline {
+  color: $dark-gray;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-info-links ul,
+.footer-info-links li {
+  align-items: center;
+  display: flex;
+}
+
+.footer-info-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,21 @@
+.newsletter {
+  background: $gray;
+  margin-top: 100px;
+  padding: 100px;
+}
+
+.newsletter__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletter-title,
+.newsletter-description {
+  color: white;
+}
+
+.newsletter-title {
+  font-size: 48px;
+}

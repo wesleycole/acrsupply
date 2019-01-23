@@ -1,0 +1,43 @@
+{#
+ # Locations page template
+ # -------------------
+ #
+ # This template gets loaded whenever the site's Locations page is requested,
+ # because the "Locations" single-entry section's Template setting is set to "Locations".
+ #
+ # An `entry` variable will be automatically passed to this template, which will
+ # be set to the Locations entry.
+-#}
+
+{% extends "_layouts/site" %}
+
+{% block main %}
+	<div class="container">
+    <h1>Find Your Location</h1>
+
+    <div id="locations-map"></div>
+
+    <div class="locations-grid">
+        {% for location in entry.locations.all() %}
+          <div class="location">
+            <span><strong>{{location.locationName}}</strong></span>
+            <span>
+              {% if location.googleMapLink %}
+                <a href="{{location.googleMapLink}}" target="_blank">
+              {% endif %}
+              {{location.address | nl2br}}
+              {% if location.googleMapLink %}
+                </a>
+              {% endif %}
+            </span>
+            <span>{{location.phoneNumber}}</span>
+          </div>
+        {% endfor %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block foot %}
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk6zLZpAFtgZGHt7IThIhAeqihEckOIrQ"></script>
+<script src="{{ siteUrl }}assets/dist/locations.js"></script>
+{% endblock %}

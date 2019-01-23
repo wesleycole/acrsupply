@@ -1,0 +1,36 @@
+.services-blocks {
+  margin-top: 30px;
+
+  @include mediaQuery(tablet-and-up) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+}
+
+.service-blocks__block {
+  margin-bottom: 30px;
+
+  @include mediaQuery(tablet-and-up) {
+    margin-bottom: 0;
+    max-width: 31%;
+  }
+}
+
+.service-blocks__block-description {
+  color: $dark-gray;
+}
+
+.service-blocks__block-link {
+  color: $blue;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all $transition-duration $transition-timing;
+
+  &:hover {
+    color: $blue-hover;
+    text-decoration: underline;
+  }
+}

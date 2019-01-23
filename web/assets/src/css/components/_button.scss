@@ -1,0 +1,34 @@
+.button {
+  background: $blue;
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background $transition-duration $transition-timing;
+
+  @include mediaQuery(tablet-and-up) {
+    display: inline-block;
+    width: auto;
+  }
+
+  &:hover {
+    background: $blue-hover;
+  }
+
+  &--white {
+    background: white;
+    color: $blue;
+
+    &:hover {
+      background: darken(white, 10);
+    }
+  }
+
+  &--large {
+    padding: 20px 30px;
+  }
+}

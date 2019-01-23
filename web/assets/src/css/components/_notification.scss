@@ -1,0 +1,22 @@
+.notification {
+  border-bottom: 1px solid $gray;
+  padding: 20px 0;
+}
+
+.notification .container {
+  @include mediaQuery(tablet-and-up) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.notification__text {
+  color: $blue;
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include mediaQuery(tablet-and-up) {
+    margin-bottom: 0;
+  }
+}

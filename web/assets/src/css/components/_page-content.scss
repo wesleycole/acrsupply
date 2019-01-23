@@ -1,0 +1,30 @@
+.page-content {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+
+  > div {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  &--half {
+    > div {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+  &--one-fourth {
+    > div {
+      flex-basis: 25%;
+      max-width: 25%;
+    }
+  }
+}

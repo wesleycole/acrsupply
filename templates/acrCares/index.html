@@ -1,0 +1,64 @@
+{#
+ # Locations page template
+ # -------------------
+ #
+ # This template gets loaded whenever the site's Locations page is requested,
+ # because the "Locations" single-entry section's Template setting is set to "Locations".
+ #
+ # An `entry` variable will be automatically passed to this template, which will
+ # be set to the Locations entry.
+-#}
+
+{% extends "_layouts/site" %}
+
+{% block main %}
+	<div class="container">
+    <h1>ACR Cares</h1>
+    <div class="page-content page-content--half">
+      <div>
+          <p>The ACR Cares initiative has been a dream of ours for a while and we are so excited that it is finally coming to fruition. Our team of volunteers has been meeting over the past year praying and seeking Gods will and asking how we can better care for our fellow team members, neighbors and our communities. Through a lot of prayer and discussion we developed the following statement that we believe captures our passion to serve. “Our mission is to honor God by showing His love and mercy to the ACR Family and our community through caring in everyday life”. If you look in Gods word you will see that Philippians 2:4 says that we should “not merely look out for your own personal interests, but also for the interests of others”. And in Acts 20:35 it states “In everything I did, I showed you that by this kind of hard work we must help the weak, remembering the words the Lord Jesus himself said: ‘It is more blessed to give than to receive”.</p>
+      </div>
+      <div>
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/113794451" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+          <p class="-mt10"><small>If you would like to support one of our many community outreach initiatives please click the link below. All donations are tax deductible.</small></p>
+          <a href="https://mygiving.secure.force.com/GXDonateNow?id=a0U0H00000XrujpUAB"><img class="alignleft wp-image-600 size-full" src="https://www.acrsupply.com/wp-content/uploads/2018/02/Donate-Button-Blue.png" alt="" width="175" height="61" /></a>
+      </div>
+    </div>
+
+    <div class="page-content page-content--half -mt60 -mb60">
+      <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/u379mSxkpbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uUX_KidrhBI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    {% if entry.acrCaresInitiatives %}
+      <h3>ACR Cares Initiatives</h3>
+      <div class="page-content page-content--half -mb30">
+        {% for initiative in entry.acrCaresInitiatives.all() %}
+          <div>
+            <h4>{{initiative.initiativeTitle}}</h4>
+            <p>{{initiative.initiativeDescription}}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if entry.teamMemberInitiatives %}
+      <h3>Team Member Initiatives</h3>
+      <div class="page-content page-content--fourth -mb30">
+        {% for initiative in entry.teamMemberInitiatives.all() %}
+          <div>
+            <span class="-block -mb10">{{initiative.initiativeTitle}}</span>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}
+
+{% block foot %}
+<script src="https://player.vimeo.com/api/player.js"></script>
+{% endblock %}

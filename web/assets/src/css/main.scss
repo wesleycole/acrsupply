@@ -1,2 +1,22 @@
+@import "normalize";
 @import "variables";
+@import "colors";
+@import "functions";
+@import "mixins";
+@import "placeholders";
 @import "typography";
+@import "global";
+@import "helpers";
+
+@import "components/button";
+@import "components/header";
+@import "components/menu";
+@import "components/footer";
+@import "components/notification";
+@import "components/section-header";
+@import "components/services";
+@import "components/ctas";
+@import "components/testimonials";
+@import "components/newsletter";
+@import "components/locations";
+@import "components/page-content";

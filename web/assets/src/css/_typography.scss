@@ -1,0 +1,48 @@
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+$mod_1: 1.2; // mobile
+$mod_2: 1.5; // desktop
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+h2 {
+  font-size: $mod_1*$mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+
+h3 {
+  font-size: $mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+}
+
+p {
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $blue-hover;
+  }
+}

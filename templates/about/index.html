@@ -1,4 +1,3 @@
-
 {#
  # About page template
  # -------------------
@@ -10,8 +9,72 @@
  # be set to the About entry.
 -#}
 
+{% set testimonial = craft.entries()
+	.section('testimonials')
+	.one() %}
+
 {% extends "_layouts/site" %}
 
 {% block main %}
-	<h1>About</h1>
+	<div class="container">
+		<h1>About Us</h1>
+		<div class="page-content page-content--half">
+			<div>
+				<p>
+					<strong>A leader in the air conditioning, heating, and refrigeration industry for over 40 years.</strong>
+				</p>
+				<p>Founded by L.C. Meachum in 1977 in Durham, NC, ACR Supply Company, Inc. is primarily focused in the marketing and wholesale distribution of HVACR parts and supplies throughout central North Carolina. We also market various specialty products throughout the southeast.</p>
+			</div>
+			<div>
+				<div style="padding:41.67% 0 0 0;position:relative;">
+					<iframe src="https://player.vimeo.com/video/200444897?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+		<h3 class="-mt60">Guiding Principles</h3>
+		<div class="page-content page-content--one-fourth">
+			<div>
+				<strong class="-blue">Purpose</strong>: Why We Exist
+				<em class="-block -mt10">Build relationships. Impact lives. Glorify God.</em>
+			</div>
+			<div>
+				<strong class="-blue">Mission</strong>: What We Do
+				<em class="-block -mt10">Caring for People, Passionate about Solutions.</em>
+			</div>
+			<div>
+				<strong class="-blue">Vision</strong>: Our Desired Future State
+				<em class="-block -mt10">Secure future. Exciting culture. Eternal significance.</em>
+			</div>
+			<div>
+				<strong class="-blue">Values</strong>: The Family Principles That Guide Us
+				<em class="-block -mt10">Humble, Hungry, &nbsp; Smart</em>
+			</div>
+		</div>
+
+		{% if testimonial %}
+			<div class="container">
+					<div class="testimonials">
+						<div class="testimonials__block">
+								<div class="testimonial">
+									<p class="testimonial__content">{{testimonial.testimonalcontent}}</p>
+									<p class="testimonial__author">{{testimonial.testimonialAuthor}}</p>
+								</div>
+						</div>
+						<div class="testimonials__block testimonials-cta">
+							<h3 class="testimonials-cta__title"><span>We Love Our Customers</span>Testimonials</h3>
+							<a class="button button--large">Read More Testimonials</a>
+						</div>
+					</div>
+			</div>
+		{% endif %}
+
+		<h3>Our Culture</h3>
+		<p>Here at ACR Supply we are very intentional in how we go about building the right culture inside of our company. We have worked very hard over the last decade to create a work environment where our team members get up every morning and truly “want” to come to work. We have done this by building a strong foundation founded upon these four cornerstones: Mission, Vision, Values, and Behaviors.  As we interact every day with associates, customers and vendor partners, we do so by keeping these four cornerstones in mind. It’s what everyone sees, hears, and experiences when they come in contact with ACR Supply. Annually we conduct a survey with every ACR team member and ask them to briefly describe the culture here at ACR Supply. To get a better glimpse of that culture, please take a moment to read some of the responses from our 2018 survey.</p>
+		<p>Here at ACR we believe that what we do is more than just a job!</p>
+	</div>
+{% endblock %}
+
+{% block foot %}
+<script src="https://player.vimeo.com/api/player.js"></script>
 {% endblock %}

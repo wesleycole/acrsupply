@@ -1,0 +1,12 @@
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+
+  @include mediaQuery(tablet-and-up) {
+    max-width: 70%;
+  }
+}
+
+.section-header__description {
+  color: $dark-gray;
+}
