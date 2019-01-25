@@ -3,11 +3,16 @@
 }
 
 .footer__container {
+  align-items: center;
   display: flex;
 }
 
 .footer-block {
   width: 30%;
+
+  &:nth-child(2) {
+    width: 70%;
+  }
 }
 
 .footer-tagline {

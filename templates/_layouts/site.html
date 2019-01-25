@@ -15,10 +15,67 @@
 {% extends "_layouts/base" %}
 
 {# Define the site navigation #}
-{% set nav = {
-	about:    { title: "About Us" },
-	locations: { title: "Locations" },
-	acrCares: { title: "ACR Cares" }
+{% set nav = [
+	{
+		title: "About Us",
+		url: "about",
+		external: false,
+		children: []
+	},
+	{
+		title: "Locations",
+		url: "locations",
+		external: false,
+		children: []
+	},
+	{
+		title: "Shop ACR Supply",
+		url: "https://store.acrsupply.com/storefrontCommerce/",
+		external: true,
+		children: [
+			{
+				title: "Request E-Store Account",
+				url: "request-e-store-account",
+				external: false
+			}
+		]
+	},
+	{
+		title: "ACR Cares",
+		url: "acr-cares",
+		external: false,
+		children: []
+	},
+	{
+		title: "Training & Education",
+		url: "training-and-education",
+		external: false,
+		children: [
+			{
+				title: "ACR University",
+				url: "https://www.hvacredu.net/acr/",
+				external: true
+			}
+		]
+	},
+	{
+		title: "Pay Online",
+		url: "pay-online",
+		external: false,
+		children: []
+	},
+	{
+		title: "Contact Us",
+		url: "contact",
+		external: false,
+		children: []
+	}
+] %}
+
+{% set footerNav = {
+	scholarships: { title: "Scholarships" },
+	careers: { title: "Careers" },
+	associates: { title: "Associates" },
 } %}
 
 {# Set the `bodyClass` variable to the entry's section handle if there is one,
@@ -38,11 +95,22 @@
 			<h1 class="header__logo"><a href="{{ siteUrl }}"><img src="{{ alias('@web/assets/images/logo.png') }}" height="40" alt="ACR Supply Co."></a></h1>
 			<nav class="menu">
 				<ul class="menu__list">
-					{% for slug, item in nav %}
+					{% for item in nav %}
 						<li class="menu__list-item">
-							<a href="{{ url(slug) }}" class="menu__list-item-link">
+							<a href="{{ not item.external ? siteUrl : "" }}{{ item.url }}" class="menu__list-item-link">
 								{{ item.title }}
 							</a>
+							{% if item.children %}
+								<ul class="menu__list">
+									{% for childItem in item.children %}
+										<li class="menu__list-item">
+											<a href="{{ not childItem.external ? siteUrl : "" }}{{ childItem.url }}" class="menu__list-item-link">
+												{{ childItem.title }}
+											</a>
+										</li>
+									{% endfor %}
+								</ul>
+							{% endif %}
 						</li>
 					{% endfor %}
 				</ul>
@@ -82,6 +150,34 @@
 							{% endif %}
 						</ul>
 					</div>
+				</div>
+				<div class="footer-block">
+					<nav class="menu">
+						<ul class="menu__list">
+							{% for slug, item in footerNav %}
+								<li class="menu__list-item">
+									<a href="{{ url(slug) }}" class="menu__list-item-link">
+										{{ item.title }}
+									</a>
+								</li>
+							{% endfor %}
+							<li class="menu__list-item">
+								<a href="http://story4.us/ACRSupply" class="menu__list-item-link">
+									The Story
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="http://www.cgnacontrols.net/" class="menu__list-item-link">
+									CGNA
+								</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="https://contractorpro.secure.force.com/" class="menu__list-item-link">
+									Honeywell Contractor Pro
+								</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 		</div>
 	</footer>

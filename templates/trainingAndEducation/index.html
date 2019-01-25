@@ -1,0 +1,32 @@
+{#
+ # About page template
+ # -------------------
+ #
+ # This template gets loaded whenever the site's About page is requested,
+ # because the "About" single-entry section's Template setting is set to "about".
+ #
+ # An `entry` variable will be automatically passed to this template, which will
+ # be set to the About entry.
+-#}
+
+{% extends "_layouts/site" %}
+
+{% block main %}
+	<div class="container container--small container--centered">
+    <h2>Training and Education</h2>
+    <form class="loginform" id="login" method="post" action="https://hvacrlearn.hvacronline.net/login/index.php">
+      <div class="form-group">
+        <label for="login_username">Username</label>
+        <input type="text" name="username" id="login_username" value="" size="20" />
+      </div>
+      <div class="form-group">
+        <label for="login_password">Password</label>
+        <input type="password" name="password" id="login_password" value="" size="20" />
+      </div>
+      <input type="submit" value="Login" />
+    </form>
+    <div class="forgotpassword">
+      <a href="https://hvacrlearn.hvacronline.net/login/forgot_password.php">Lost password?</a>
+    </div>
+  </div>
+{% endblock %}

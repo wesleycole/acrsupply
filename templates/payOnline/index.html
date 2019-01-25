@@ -1,0 +1,23 @@
+{#
+ # About page template
+ # -------------------
+ #
+ # This template gets loaded whenever the site's About page is requested,
+ # because the "About" single-entry section's Template setting is set to "about".
+ #
+ # An `entry` variable will be automatically passed to this template, which will
+ # be set to the About entry.
+-#}
+
+{% extends "_layouts/site" %}
+
+{% block main %}
+	<div class="container container--small">
+    <h2>Pay Online</h2>
+    <p><strong>Save Time. Save Money. Enroll in On-Line Bill Pay and our E-store</strong></p>
+    <p>Receive your invoices faster by enrolling in e-billing invoicing service. Invoices are sent by email or fax once a day. With email, you can download your invoice data directly into your accounting package (such as QuickBooks or Peachtree) Also with email invoices we now offer Invoice Central to pay online.</p>
+    <p>Visit our E-store at <a href="{{ siteUrl }}store-sign-up/">{{ siteUrl }}store-sign-up/</a>  register today to purchase online.</p>
+    <p>To sign up, Call Betty Mooney at <a href="tel:919-765-8081">919-765-8081</a> or email your request to <a href="mailto:invoices@acrsupply.com">invoices@acrsupply.com</p>
+    </p>
+  </div>
+{% endblock %}

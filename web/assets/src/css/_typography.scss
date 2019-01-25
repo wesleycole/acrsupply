@@ -34,8 +34,13 @@ h3 {
 }
 
 p {
+  color: $dark-gray;
   line-height: 1.5;
   margin-top: 0;
+}
+
+strong {
+  color: $black;
 }
 
 a {

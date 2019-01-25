@@ -1,0 +1,49 @@
+label,
+.input-description {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+input,
+textarea,
+.freeform-input {
+  border: 1px solid $gray;
+  border-radius: 3px;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 10px;
+
+  input {
+    width: 100%;
+  }
+}
+
+.freeform-form-has-errors {
+  margin-bottom: 10px;
+}
+
+.freeform-errors li {
+  font-size: 14px;
+}
+
+.loginform,
+.forgotpassword {
+  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.loginform {
+  margin-top: 120px;
+}
+
+.forgotpassword {
+  margin-bottom: 120px;
+}

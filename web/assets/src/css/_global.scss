@@ -1,5 +1,19 @@
+body {
+  background: $light-gray;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
   width: 95%;
+
+  &--small {
+    @include mediaQuery(tablet-and-up) {
+      width: 60%;
+    }
+  }
+
+  &--centered {
+    text-align: center;
+  }
 }
