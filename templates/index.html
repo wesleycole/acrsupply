@@ -27,12 +27,23 @@
 {% extends "_layouts/site" %}
 
 {% block main %}
+
+	<div class="glide">
+		<div class="glide__track" data-glide-el="track">
+			<ul class="glide__slides">
+				{% for entry in promotions %}
+				{% set image = entry.promotionImage.one() %}
+					<li class="glide__slide" style="background-image: url({{ image.url }});"></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="glide__arrows" data-glide-el="controls">
+			<button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+			<button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+		</div>
+	</div>
 	<div class="promotions">
-		{% for entry in promotions %}
-			<div class="promotions__item">
-				Promotion
-			</div>
-		{% endfor %}
+
 	</div>
 
 	<div class="notification">
@@ -66,8 +77,10 @@
 	</div>
 	<div class="cta-blocks">
 		{% for block in entry.ctas.all() %}
+			{% set image = block.callToActionImage.one() %}
 			<div
-				class="cta-blocks__block cta-blocks__block--{{block.callToActionBackgroundColor}}">
+				class="cta-blocks__block cta-blocks__block--{{block.callToActionBackgroundColor}}"
+				style="background-image: url({{ image.url }})">
 				<h4 class="cta-blocks__block-title">{{block.callToActionTitle}}</h4>
 				<p class="cta-blocks__block-description">{{block.callToActionDescription}}</p>
 				{{block.callToActionLink.getLink({
@@ -93,4 +106,12 @@
 				</div>
 		</div>
 	{% endif %}
+{% endblock %}
+
+{% block foot %}
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+<script>
+	new Glide('.glide').mount()
+</script>
 {% endblock %}

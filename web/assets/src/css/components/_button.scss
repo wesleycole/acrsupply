@@ -21,18 +21,20 @@ input[type="submit"],
 
   &:hover {
     background: $blue-hover;
+    color: white;
   }
+}
 
-  &--white {
-    background: white;
+.button--white {
+  background: white;
+  color: $blue;
+
+  &:hover {
+    background: darken(white, 10);
     color: $blue;
-
-    &:hover {
-      background: darken(white, 10);
-    }
   }
+}
 
-  &--large {
-    padding: 20px 30px;
-  }
+.button--large {
+  padding: 20px 30px;
 }

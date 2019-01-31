@@ -120,14 +120,26 @@
 
 	<main id="main" role="main">
 		{% block main %}{% endblock %}
-		<div class="newsletter">
-			<div class="container">
-				<div class="newsletter__content">
-					<h2 class="newsletter-title">Stay Updated With ACR</h2>
-					<p class="newsletter-description">Get VIP access for early announcements for all our events and sales.</p>
+		{% if newsletter %}
+			{% set image = newsletter.newsletterImage.one() %}
+			<div class="newsletter" style="background-image: url({{ image.url }});">
+				<div class="container">
+					<div class="newsletter__content">
+						<h2 class="newsletter-title">{{ newsletter.newsletterTitle }}</h2>
+						<p class="newsletter-description">{{ newsletter.newsletterDescription }}</p>
+						<div class="newsletter__form">
+							<!-- Begin Constant Contact Active Forms -->
+							<script> var _ctct_m = "775d5c85ea531ace7c27dc1bdfdb8963"; </script>
+							<script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+							<!-- End Constant Contact Active Forms -->
+							<!-- Begin Constant Contact Inline Form Code -->
+							<div class="ctct-inline-form" data-form-id="1ec3388d-8377-4aab-aae2-4ac3b365c946"></div>
+							<!-- End Constant Contact Inline Form Code -->
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		{% endif %}
 	</main>
 
 	<footer class="footer">

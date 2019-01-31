@@ -9,22 +9,45 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 120px 60px;
+  padding: 160px 60px;
+  position: relative;
   text-align: center;
   width: 50%;
 
-  &--red {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &--red::after {
     background-color: $red-60;
   }
 
-  &--blue {
+  &--blue::after {
     background-color: $blue-60;
   }
+}
+
+.cta-blocks__block-title,
+.cta-blocks__block-description,
+.cta-blocks__block-link {
+  position: relative;
+  z-index: 100;
+}
+
+.cta-blocks__block-title,
+.cta-blocks__block-description {
+  color: white;
 }
 
 .cta-blocks__block-title {
   font-size: 28px;
   margin: 0;
+  margin-bottom: 10px;
 
   @include mediaQuery(tablet-and-up) {
     font-size: 48px;

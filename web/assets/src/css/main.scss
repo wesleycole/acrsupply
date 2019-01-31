@@ -9,6 +9,9 @@
 @import "global";
 @import "helpers";
 
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 @import "components/button";
 @import "components/header";
 @import "components/menu";
@@ -21,3 +24,4 @@
 @import "components/newsletter";
 @import "components/locations";
 @import "components/page-content";
+@import "components/promotion";

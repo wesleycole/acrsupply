@@ -59,6 +59,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="{{ siteUrl }}assets/dist/main.css{{ craft.app.config.general.devMode ? '?v=' ~ random() : '?v=' ~ craft.app.config.general.assetVersion }}">
+		{% block customHead %}{% endblock %}
 	{% endblock %}
 </head>
 <body {% if bodyClass is defined %}class="{{ bodyClass }}"{% endif %}>

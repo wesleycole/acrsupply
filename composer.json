@@ -1,6 +1,6 @@
 {
   "require": {
-    "craftcms/cms": "3.1.4",
+    "craftcms/cms": "3.1.6.1",
     "vlucas/phpdotenv": "^2.4.0",
     "craftcms/element-api": "2.5.4",
     "swixpop/locate": "2.1.0",

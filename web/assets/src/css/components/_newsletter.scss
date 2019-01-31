@@ -1,7 +1,20 @@
 .newsletter {
-  background: $gray;
+  background-position: center;
+  background-size: cover;
   margin-top: 100px;
   padding: 100px;
+  position: relative;
+
+  &::after {
+    background-color: $gray;
+    content: "";
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .newsletter__content {
@@ -9,6 +22,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 100;
 }
 
 .newsletter-title,
@@ -18,4 +33,9 @@
 
 .newsletter-title {
   font-size: 48px;
+  margin-top: 0;
+}
+
+.newsletter__form {
+  max-width: 600px;
 }
