@@ -3,3 +3,8 @@
 /vendor
 /node_modules
 .DS_Store
+
+# ASSETS (added by fortrabbit/craft-copy)
+/web/assets/*
+
+/web/cpresources/*
