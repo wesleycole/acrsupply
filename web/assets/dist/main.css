@@ -827,6 +827,12 @@ input[type="submit"],
 .testimonial__author {
   font-weight: 700; }
 
+.testimonials--about {
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px; }
+
 .newsletter {
   background-position: center;
   background-size: cover;
@@ -904,5 +910,14 @@ input[type="submit"],
   background-position: center;
   background-size: cover;
   min-height: 450px; }
+
+.culture-survey-results {
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px; }
+
+.culture-survey-result {
+  font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */
