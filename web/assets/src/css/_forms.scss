@@ -12,12 +12,13 @@ textarea,
   border: 1px solid $gray;
   border-radius: 3px;
   box-shadow: none;
+  box-sizing : border-box;
   padding: 10px;
 }
 
 .form-group {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 
   input {
     width: 100%;
@@ -41,7 +42,12 @@ textarea,
 }
 
 .loginform {
-  margin-top: 120px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
 }
 
 .forgotpassword {

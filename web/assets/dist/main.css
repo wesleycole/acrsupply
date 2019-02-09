@@ -384,11 +384,12 @@ textarea,
   border: 1px solid #cccccc;
   border-radius: 3px;
   box-shadow: none;
+  box-sizing: border-box;
   padding: 10px; }
 
 .form-group {
   display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 30px; }
   .form-group input {
     width: 100%; }
 
@@ -406,7 +407,12 @@ textarea,
   max-width: 600px; }
 
 .loginform {
-  margin-top: 120px; }
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center; }
 
 .forgotpassword {
   margin-bottom: 120px; }
@@ -930,5 +936,13 @@ input[type="submit"],
 .culture-survey-result {
   color: #333333;
   font-style: italic; }
+
+.associate-links {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px; }
+  .associate-links > a {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
