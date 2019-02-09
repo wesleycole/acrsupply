@@ -11,6 +11,17 @@
   }
 }
 
+.notification__content {
+  align-items: center;
+  display: flex;
+
+  > img {
+    display: block;
+    height: 50px;
+    margin-right: 30px;
+  }
+}
+
 .notification__text {
   color: $blue;
   margin: 0;

@@ -20,6 +20,8 @@
 	.section('notifications')
 	.one() %}
 
+{% set notificationImage = notification.singleImage.one() %}
+
 {% set testimonial = craft.entries()
 	.section('testimonials')
 	.one() %}
@@ -48,7 +50,12 @@
 
 	<div class="notification">
 		<div class="container">
-			<p class="notification__text">{{notification.notificationText | raw}}</p>
+			<div class="notification__content">
+				{% if notificationImage.url %}
+					<img src="{{notificationImage.url}}" />
+				{% endif %}
+				<p class="notification__text">{{notification.notificationText | raw}}</p>
+			</div>
 			{{notification.notificationLink.getLink({
 				class: 'button notification__link'
 			})}}
