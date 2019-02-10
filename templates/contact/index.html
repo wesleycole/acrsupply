@@ -14,6 +14,8 @@
 {% block main %}
 	<div class="container container--small">
     <h2>Contact Us</h2>
-    {{ craft.freeform.form("contactForm").render() }}
+    {{ craft.freeform.form("contactForm").render({
+      class: 'acr-form'
+    }) }}
   </div>
 {% endblock %}

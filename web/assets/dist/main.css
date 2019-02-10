@@ -406,7 +406,8 @@ textarea,
   margin-bottom: 30px;
   max-width: 600px; }
 
-.loginform {
+.loginform,
+.acr-form {
   background: white;
   border-radius: 3px;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
@@ -649,7 +650,8 @@ input[type="submit"],
     opacity: 1;
     left: auto;
     padding-top: 27px;
-    min-width: 200px; }
+    min-width: 200px;
+    z-index: 1000; }
 
 .menu__list-item-link {
   color: #333333;
