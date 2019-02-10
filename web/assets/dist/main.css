@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://rsms.me/inter/inter.css");
 html {
   line-height: 1.15;
   /* 1 */
@@ -303,7 +304,7 @@ template {
   padding: 0; }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 1.2; }
   html {
@@ -314,6 +315,9 @@ html {
     @media screen and (min-width: 1200px) {
       html {
         font-size: 20px; } }
+  @supports (font-variation-settings: normal) {
+    html {
+      font-family: 'Inter var', sans-serif; } }
 
 h1,
 h2,
@@ -884,13 +888,29 @@ input[type="submit"],
   max-width: 600px; }
 
 .locations-grid {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
+  @supports (display: grid) {
+    .locations-grid {
+      margin-left: 0;
+      margin-right: 0; } }
 
-.location span {
-  display: block;
-  margin-bottom: 8px; }
+.location {
+  margin: 0 15px;
+  flex: 1 1 25%;
+  max-width: calc(25% - 30px); }
+  @supports (display: grid) {
+    .location {
+      margin: 0;
+      flex: none;
+      max-width: none; } }
+  .location span {
+    display: block;
+    margin-bottom: 8px; }
 
 #locations-map {
   height: 450px;
@@ -946,5 +966,34 @@ input[type="submit"],
   margin-top: 30px; }
   .associate-links > a {
     display: block; }
+
+.vendors-grid {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 60px; }
+  @supports (display: grid) {
+    .vendors-grid {
+      margin-left: 0;
+      margin-right: 0; } }
+
+.vendor {
+  margin: 0 15px;
+  flex: 1 1 25%;
+  max-width: calc(25% - 30px); }
+  @supports (display: grid) {
+    .vendor {
+      margin: 0;
+      flex: none;
+      max-width: none; } }
+
+.vendor__name {
+  margin-bottom: 10px; }
+
+.vendor__description {
+  font-size: 15px; }
 
 /*# sourceMappingURL=main.css.map */

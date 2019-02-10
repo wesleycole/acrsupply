@@ -1,0 +1,36 @@
+{#
+ # About page template
+ # -------------------
+ #
+ # This template gets loaded whenever the site's About page is requested,
+ # because the "About" single-entry section's Template setting is set to "about".
+ #
+ # An `entry` variable will be automatically passed to this template, which will
+ # be set to the About entry.
+-#}
+
+{% extends "_layouts/site" %}
+
+{% block main %}
+	<div class="container">
+    <h2>Vendors</h2>
+    <p>ACR Supply Co. proudly carries products manufactured by over 150 vendors. To find out more information on our vendors, visit their sites below.</p>
+    {% if entry.vendors %}
+      <div class="vendors-grid">
+        {% for vendor in entry.vendors.all() %}
+          <div class="vendor">
+            <p class="vendor__name"><strong>
+              {{vendor.vendorLink.getLink({
+                class: 'vendor__link',
+                text: vendor.vendorName
+              })}}
+            </strong></p>
+            {% if vendor.vendorDescription %}
+              <p class="vendor__description">{{vendor.vendorDescription}}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

@@ -1,8 +1,14 @@
+@import url('https://rsms.me/inter/inter.css');
+
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   line-height: 1.2;
+
+  @supports (font-variation-settings: normal) {
+    font-family: 'Inter var', sans-serif;
+  }
 }
 
 $mod_1: 1.2; // mobile

@@ -42,3 +42,30 @@
     }
   }
 }
+
+@mixin flexContainer($gridGap, $wrap: false) {
+  display: flex;
+  margin-left: -($gridGap / 2) + px;
+  margin-right: -($gridGap / 2) + px;
+
+  @if $wrap {
+    flex-wrap: wrap;
+  }
+
+  @supports (display: grid) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@mixin flexItem($gridGap, $width) {
+  margin: 0 ($gridGap / 2) + px;
+  flex: 1 1 $width;
+  max-width: calc(#{$width} - #{$gridGap + px});
+
+  @supports (display: grid) {
+    margin: 0;
+    flex: none;
+    max-width: none;
+  }
+}

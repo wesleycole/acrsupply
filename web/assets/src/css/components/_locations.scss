@@ -1,10 +1,14 @@
 .locations-grid {
+  @include flexContainer(30);
+
   display: grid;
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .location {
+  @include flexItem(30, 25%);
+
   span {
     display: block;
     margin-bottom: 8px;
