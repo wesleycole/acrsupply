@@ -14,7 +14,7 @@
 {% block main %}
 	<div class="container">
     <h2>Vendors</h2>
-    <p>ACR Supply Co. proudly carries products manufactured by over 150 vendors. To find out more information on our vendors, visit their sites below.</p>
+    <p class="-read">ACR Supply Co. proudly carries products manufactured by over 150 vendors. To find out more information on our vendors, visit their sites below.</p>
     {% if entry.vendors %}
       <div class="vendors-grid">
         {% for vendor in entry.vendors.all() %}
