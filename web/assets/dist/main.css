@@ -999,4 +999,24 @@ input[type="submit"],
 .vendor__description {
   font-size: 15px; }
 
+.fc-toolbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; }
+
+.fc-left {
+  order: 1; }
+
+.fc-center {
+  order: 2; }
+
+.fc-right {
+  order: 3; }
+
+.fc-clear {
+  display: none; }
+
+.fc-center h2 {
+  font-size: 20px; }
+
 /*# sourceMappingURL=main.css.map */

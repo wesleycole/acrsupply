@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9edce3b9aaf1a816424525420a4b8a88",
+    "content-hash": "297da85528395b5e03c8e05b4f721c4c",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -396,11 +396,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.8",
+            "version": "3.1.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/ba226f463efce722ddfbcbf726fed851fff37277",
-                "reference": "ba226f463efce722ddfbcbf726fed851fff37277",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/30aca24eff4624546e29ccc3ccea6f9717e30804",
+                "reference": "30aca24eff4624546e29ccc3ccea6f9717e30804",
                 "shasum": ""
             },
             "require": {
@@ -476,7 +476,7 @@
                 "docs": "https://github.com/craftcms/docs",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2019-02-04T19:38:51+00:00"
+            "time": "2019-02-13T21:49:45+00:00"
         },
         {
             "name": "craftcms/element-api",
@@ -975,30 +975,26 @@
         },
         {
             "name": "fortrabbit/craft-copy",
-            "version": "1.0.0-RC2",
+            "version": "1.0.0-RC4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fortrabbit/craft-copy/zipball/781a8eae1127a466b0e71fa19bc55c0e14942bf1",
-                "reference": "781a8eae1127a466b0e71fa19bc55c0e14942bf1",
+                "url": "https://api.github.com/repos/fortrabbit/craft-copy/zipball/43d136ecdd2f5a8a0cb7a38c957324f567da099e",
+                "reference": "43d136ecdd2f5a8a0cb7a38c957324f567da099e",
                 "shasum": ""
             },
             "require": {
                 "albertofem/rsync-lib": "^1.0.0",
                 "cpliakas/git-wrapper": "^2.0",
                 "craftcms/cms": "^3.0.0",
-                "fortrabbit/craft-auto-migrate": "^1.0",
+                "fortrabbit/craft-auto-migrate": "^1.1.0",
                 "ostark/yii2-artisan-bridge": "^1.2.0",
                 "php": "^7.1.3",
                 "symfony/process": "^4.1",
                 "symfony/yaml": "^4.1",
                 "vlucas/phpdotenv": "^2.5.1"
             },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.12.2",
-                "phpstan/phpstan": "^0.10.5"
-            },
             "bin": [
-                "bin/craft-copy-installer.php",
+                "bin/craft-copy-import-db.php",
                 "bin/craft-copy-env.php"
             ],
             "type": "craft-plugin",
@@ -1014,7 +1010,6 @@
                     "fortrabbit\\Copy\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1026,13 +1021,17 @@
             ],
             "description": "Tooling for Craft on fortrabbit",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "queue"
             ],
-            "time": "2018-11-26T11:16:20+00:00"
+            "support": {
+                "docs": "https://github.com/fortrabbit/craft-copy/blob/master/README.md",
+                "issues": "https://github.com/fortrabbit/craft-deploy-tools/issues"
+            },
+            "time": "2019-02-01T14:35:14+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1979,12 +1978,47 @@
             "time": "2016-02-11T07:05:27+00:00"
         },
         {
-            "name": "sebastianlenz/linkfield",
-            "version": "1.0.16",
+            "name": "rlanvin/php-rrule",
+            "version": "v1.6.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/7040a829c6f8cf5b85cea39b5c36e1fbc762c7cd",
-                "reference": "7040a829c6f8cf5b85cea39b5c36e1fbc762c7cd",
+                "url": "https://api.github.com/repos/rlanvin/php-rrule/zipball/1373df401e0926cf7548716dabbc0d19603a144d",
+                "reference": "1373df401e0926cf7548716dabbc0d19603a144d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-intl": "Intl extension is needed for humanReadable()"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RRule\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Lightweight and fast recurrence rules for PHP (RFC 5545)",
+            "homepage": "https://github.com/rlanvin/php-rrule",
+            "keywords": [
+                "date",
+                "ical",
+                "recurrence",
+                "recurring",
+                "rrule"
+            ],
+            "time": "2019-01-13T09:49:03+00:00"
+        },
+        {
+            "name": "sebastianlenz/linkfield",
+            "version": "1.0.17",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/fe676cdf3d667df646adfab5963e8f6e38e4c6de",
+                "reference": "fe676cdf3d667df646adfab5963e8f6e38e4c6de",
                 "shasum": ""
             },
             "require": {
@@ -2007,7 +2041,7 @@
                 "MIT"
             ],
             "description": "A Craft field type for selecting links",
-            "time": "2019-01-21T11:15:08+00:00"
+            "time": "2019-02-05T13:00:26+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -2134,6 +2168,52 @@
                 "phra"
             ],
             "time": "2015-10-13T18:44:15+00:00"
+        },
+        {
+            "name": "solspace/craft3-calendar",
+            "version": "2.0.15",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solspace/craft3-calendar/zipball/d9f21778d01db39b630c27b139ee5bff6248e322",
+                "reference": "d9f21778d01db39b630c27b139ee5bff6248e322",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "nesbot/carbon": "^1.22.1",
+                "php": ">=7.0",
+                "rlanvin/php-rrule": "~1.6.0",
+                "solspace/craft3-commons": "^1.0.16",
+                "symfony/filesystem": "^2.8|^3.0|^4.0",
+                "symfony/finder": "^2.8|^3.0|^4.0",
+                "symfony/property-access": "^2.8|^3.0|^4.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "schemaVersion": "2.0.5",
+                "handle": "calendar",
+                "class": "Solspace\\Calendar\\Calendar",
+                "name": "Calendar",
+                "developer": "Solspace",
+                "developerUrl": "https://solspace.com/craft/calendar",
+                "documentationUrl": "http://docs.solspace.com/craft/calendar/v2/",
+                "changelogUrl": "https://raw.githubusercontent.com/solspace/craft3-calendar/master/CHANGELOG.md",
+                "hasSettings": true,
+                "hasCpSection": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Solspace\\Calendar\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Solspace",
+                    "homepage": "https://solspace.com/"
+                }
+            ],
+            "description": "The most powerful event management plugin for Craft.",
+            "time": "2019-02-06T18:06:58+00:00"
         },
         {
             "name": "solspace/craft3-commons",
