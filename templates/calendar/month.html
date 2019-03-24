@@ -29,10 +29,10 @@
         {% set targetDate = segment2~"-"~segment3~"-01" %}
     {% endif %}
 
-    <div class="container">
+    <div class="container container--calendar">
         <h2>Events</h2>
-        <div class="row">
-            <div class="col-md-9">
+        <div class="month-calendar">
+            <div>
 
                 {% include "calendar/layouts/_calendar_banner.html" %}
 
@@ -51,15 +51,10 @@
                         </div>
 
                         <div class="col-auto">
-                            <h3>
-                                {% include "calendar/layouts/_month_heading.html" with {month: month} only %} &nbsp;
-                                <span class="badge {{ month.eventCount ? "badge-warning" : "badge-secondary" }}">
-                                    {{ month.eventCount }} event{{ month.eventCount > 1 or month.eventCount == 0 ? "s" }}
-                                </span>
-                            </h3>
+                            {% include "calendar/layouts/_month_heading.html" with {month: month} only %}
                         </div>
 
-                        <div class="col-3 clearfix">
+                        <div class="col-3 clearfix text-right">
                             <a class="button"
                                 href="{{ siteUrl }}calendar/month/{{ segment2 == "calendar" ? "calendar/"~segment3~"/" }}{{ month.nextDate.format('Y/m') }}">
                                 {{ month.nextDate.format('F') }} <span class="fas fa-arrow-right"></span>
@@ -109,10 +104,6 @@
                     </table>
                 </div>
 
-            </div>
-
-            <div class="col-md-3">
-                {% include "calendar/layouts/_sidebar.html" %}
             </div>
         </div>
     </div>

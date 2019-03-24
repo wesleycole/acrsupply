@@ -26,9 +26,6 @@
             </span>
     </div>
     <div class="content">
-        <span class='fas fa-calendar-alt' style='color: {{ event.calendar.color }};'></span>
-        <span style='color: {{ event.calendar.color }};'>{{ event.calendar.name }}</span>
-        <hr />
         {% if event.allDay %}
             {% if event.multiDay %}
                 <b>Starts</b> {{ event.startDate.format('F j, Y') }}<br />

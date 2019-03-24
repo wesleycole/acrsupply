@@ -38,3 +38,13 @@ input[type="submit"],
 .button--large {
   padding: 20px 30px;
 }
+
+.btn.btn-secondary {
+  background: white;
+  border: 1px solid $gray;
+  font-size: 14px;
+}
+
+.dropdown-toggle::after {
+  border-top: .3em solid $black !important;
+}

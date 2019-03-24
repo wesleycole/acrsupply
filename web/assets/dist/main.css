@@ -375,6 +375,12 @@ a {
   a:hover {
     color: #1d507d; }
 
+.container--calendar h2 {
+  font-size: 54px;
+  font-weight: 700;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em; }
+
 label,
 .input-description {
   display: block;
@@ -611,6 +617,14 @@ input[type="submit"],
 
 .button--large {
   padding: 20px 30px; }
+
+.btn.btn-secondary {
+  background: white;
+  border: 1px solid #cccccc;
+  font-size: 14px; }
+
+.dropdown-toggle::after {
+  border-top: 0.3em solid #333333 !important; }
 
 .header {
   background: white;
@@ -1018,5 +1032,33 @@ input[type="submit"],
 
 .fc-center h2 {
   font-size: 20px; }
+
+.month-calendar {
+  margin-top: 40px; }
+
+.calendar-header {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 768px), print {
+    .calendar-header {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.container--calendar table th,
+.container--calendar table td {
+  display: block;
+  border: 0; }
+  @media only screen and (min-width: 768px), print {
+    .container--calendar table th,
+    .container--calendar table td {
+      display: table-cell; } }
+
+.container--calendar table td {
+  border-bottom: 1px solid #cccccc; }
+
+@media only screen and (min-width: 768px), print {
+  .container--calendar table th {
+    border-bottom: 1px solid #cccccc; } }
 
 /*# sourceMappingURL=main.css.map */
