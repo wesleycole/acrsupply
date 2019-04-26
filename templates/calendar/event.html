@@ -37,16 +37,6 @@
             </a>
         </div>
 
-        {% set eventSaved = craft.app.session.getFlash('calendar_event_saved') %}
-        {% if eventSaved %}
-        <div class="alert alert-success alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                    aria-hidden="true">&times;</span></button>
-            Event saved successfully!
-        </div>
-        <br />
-        {% endif %}
-
         <div>
             <div id="events_calendar">
                 <table class="table table-striped mt-3">
@@ -151,6 +141,13 @@
                     {% endif %}
                 </table>
             </div>
+
+            {% if event.connectedForm is defined and event.connectedForm is not empty %}
+              <div class="event-registration-form">
+                <h3>{{ event.connectedForm.name }}</h3>
+                {{ event.connectedForm.render() }}
+              </div>
+            {% endif %}
 
         </div>
         {% else %}
