@@ -966,7 +966,8 @@ input[type="submit"],
 .culture-survey-results {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 60px; }
 
 .culture-survey-result {
   background: white;
