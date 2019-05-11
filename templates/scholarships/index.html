@@ -9,11 +9,33 @@
  # be set to the About entry.
 -#}
 
+{% 
+  set recipients = craft.entries()
+    .section('scholarshipYearsRecipients')
+    .all() 
+%}
+
 {% extends "_layouts/site" %}
 
 {% block main %}
-	<div class="container container--small">
+  <div class="container container--small">
     <h2>Anna Bullock Memorial Scholarship</h2>
     <p>The Anna Bullock memorial scholarship was established by ACR Supply Company to honor the life of Anna Bullock, remembered as a “standout student, athlete and daughter of Wayne and Ruth Ann Bullock.” This program is for the sons and daughters of ACR Supply Company associates. The program awards a $2000.00 scholarship annually to each student who is pursuing a formal two or four year degree.</p>
+    {% if recipients %}
+      <div class="scholarship-recipients">
+      {% for entry in recipients %}
+        <div class="scholarship-recipients__year">
+          <strong>{{ entry.title }}</strong>
+          {% if entry.scholarshipRecipients %}
+            <ul class="scholarship-recipients__recipient">
+            {% for recipient in entry.scholarshipRecipients %}
+              <li class="scholarship-recipients__name">{{ recipient.recipientName }}</li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      {% endfor %}
+      </div>
+    {% endif %}
   </div>
 {% endblock %}

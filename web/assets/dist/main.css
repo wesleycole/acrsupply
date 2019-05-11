@@ -966,4 +966,23 @@ input[type="submit"],
 .event-registration-form {
   margin-top: 30px; }
 
+.scholarship-recipients {
+  display: flex;
+  flex-wrap: wrap; }
+
+.scholarship-recipients__year {
+  margin-bottom: 30px;
+  margin-right: 20px;
+  width: calc(33.3333% - 20px); }
+
+.scholarship-recipients__recipient {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0; }
+
+.scholarship-recipients__name {
+  margin-top: 5px;
+  font-size: 16px; }
+
 /*# sourceMappingURL=main.css.map */

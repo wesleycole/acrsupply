@@ -78,18 +78,12 @@
                         <td>{{ event.description }}</td>
                     </tr>
                     {% endif %}
+                    {% if event['eventPrice'] is defined and event.eventPrice is not empty %}
                     <tr>
-                        <th>Repeats?</th>
-                        <td>
-                            {% if event.repeating %}
-                            <span class="fas fa-redo"></span>&nbsp;
-                            Repeats {{ event.readableRepeatRule }}
-                            {% else %}
-                            No
-                            {% endif %}
-                        </td>
+                        <th>Price</th>
+                        <td>${{ event.eventPrice }}</td>
                     </tr>
-
+                    {% endif %}
                     {% if event.repeating %}
                     <tr>
                         <th>Upcoming Recurrences</th>
