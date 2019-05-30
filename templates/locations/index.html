@@ -12,27 +12,31 @@
 {% extends "_layouts/site" %}
 
 {% block main %}
-	<div class="container">
+  <div class="container">
     <h2>Find Your Location</h2>
 
     <div id="locations-map"></div>
 
+    <div class="locations-number">
+      <span>Toll Free &amp; After Hours Number: <strong>1-800-442-4044</strong></span>
+    </div>
+
     <div class="locations-grid">
-        {% for location in entry.locations.all() %}
-          <div class="location">
-            <span><strong>{{location.locationName}}</strong></span>
-            <span>
-              {% if location.googleMapLink %}
-                <a href="{{location.googleMapLink}}" target="_blank">
-              {% endif %}
-              {{location.address | nl2br}}
-              {% if location.googleMapLink %}
-                </a>
-              {% endif %}
-            </span>
-            <span>{{location.phoneNumber}}</span>
-          </div>
-        {% endfor %}
+      {% for location in entry.locations.all() %}
+        <div class="location">
+          <span><strong>{{location.locationName}}</strong></span>
+          <span>
+            {% if location.googleMapLink %}
+              <a href="{{location.googleMapLink}}" target="_blank">
+            {% endif %}
+            {{location.address | nl2br}}
+            {% if location.googleMapLink %}
+              </a>
+            {% endif %}
+          </span>
+          <span>{{location.phoneNumber}}</span>
+        </div>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}

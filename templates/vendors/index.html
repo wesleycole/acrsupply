@@ -1,14 +1,3 @@
-{#
- # About page template
- # -------------------
- #
- # This template gets loaded whenever the site's About page is requested,
- # because the "About" single-entry section's Template setting is set to "about".
- #
- # An `entry` variable will be automatically passed to this template, which will
- # be set to the About entry.
--#}
-
 {% extends "_layouts/site" %}
 
 {% block main %}
@@ -18,7 +7,11 @@
     {% if entry.vendors %}
       <div class="vendors-grid">
         {% for vendor in entry.vendors.all() %}
+          {% set image = vendor.vendorImage.one() %}
           <div class="vendor">
+            {% if image %}
+              <img src={{image.url}} height="50" class="vendor__image" />
+            {% endif %}
             <p class="vendor__name"><strong>
               {{vendor.vendorLink.getLink({
                 class: 'vendor__link',

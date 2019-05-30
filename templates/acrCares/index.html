@@ -38,7 +38,11 @@
       <h3>ACR Cares Initiatives</h3>
       <div class="page-content page-content--half -mb30">
         {% for initiative in entry.acrCaresInitiatives.all() %}
-          <div>
+          <div class="acr-cares-initiative">
+            {% set image = initiative.initiativeImage.one() %}
+            {% if image %}
+              <img src={{image.url}} height="75" />
+            {% endif %}
             <h4>{{initiative.initiativeTitle}}</h4>
             <p>{{initiative.initiativeDescription}}</p>
           </div>
