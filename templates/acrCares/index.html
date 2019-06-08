@@ -54,9 +54,9 @@
       <h3>Team Member Initiatives</h3>
       <div class="page-content page-content--fourth -mb30">
         {% for initiative in entry.teamMemberInitiatives.all() %}
-          <div>
-            <span class="-block -mb10">{{initiative.initiativeTitle}}</span>
-          </div>
+          <ul>
+            <li class="-block -mb10">{{initiative.initiativeTitle}}</li>
+          </ul>
         {% endfor %}
       </div>
     {% endif %}
