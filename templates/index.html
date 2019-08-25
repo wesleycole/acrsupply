@@ -71,7 +71,11 @@
 
 			<div class="services-blocks">
 				{% for block in entry.services.all() %}
+					{% set serviceImage = block.serviceImage.one() %}
 					<div class="service-blocks__block">
+						{% if serviceImage %}
+							<div class="service-block__block-image" style="background-image: url({{ serviceImage.url }})"></div>
+						{% endif %}
 						<h4 class="service-blocks__block-title">{{block.serviceTitle}}</h4>
 						<p class="service-blocks__block-description">{{block.serviceDescription}}</p>
 						{{block.serviceLink.getLink({

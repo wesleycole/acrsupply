@@ -2,8 +2,12 @@
   background-position: center;
   background-size: cover;
   margin-top: 100px;
-  padding: 100px;
+  padding: 30px;
   position: relative;
+
+  @include mediaQuery(tablet-and-up) {
+    padding: 100px;
+  }
 
   &::after {
     background-color: $gray;

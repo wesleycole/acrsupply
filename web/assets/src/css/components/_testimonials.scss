@@ -7,8 +7,10 @@
 }
 
 .testimonials__block {
-  width: 50%;
-  margin-right: 90px;
+  @include mediaQuery(tablet-and-up) {
+    width: 50%;
+    margin-right: 90px;
+  }
 
   &:last-child {
     margin-right: 0;

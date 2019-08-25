@@ -1,6 +1,9 @@
 .cta-blocks {
-  display: flex;
   margin-top: 100px;
+
+  @include mediaQuery(tablet-and-up) {
+    display: flex;
+  }
 }
 
 .cta-blocks__block {
@@ -12,7 +15,10 @@
   padding: 160px 60px;
   position: relative;
   text-align: center;
-  width: 50%;
+
+  @include mediaQuery(tablet-and-up) {
+    width: 50%;
+  }
 
   &::after {
     content: "";
