@@ -1128,4 +1128,10 @@ input[type="submit"],
 .acr-cares-initiative {
   margin-top: 30px; }
 
+.application-forms .button {
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 768px), print {
+    .application-forms .button {
+      margin-bottom: 0; } }
+
 /*# sourceMappingURL=main.css.map */

@@ -9,12 +9,26 @@
  # be set to the About entry.
 -#}
 
+{% set applications = craft.entries()
+  .section('accountApplications')
+  .inReverse()
+	.all() %}
+
 {% extends "_layouts/site" %}
 
 {% block main %}
 	<div class="container container--small">
-    <h2>E-Store Account Request Form</h2>
-    <p>We aren’t quite ready to open up our online store to everyone, but we wanted to give you the opportunity to be one of our testers and to get a special promotion from us for signing up to be an exclusive member.</p>
+    <h2>Account Request Forms</h2>
+    <p>Ready to start shopping with ACR Supply online and in the store? Fill out a credit or cash application to begin the process. All forms are electronically signed and will be automatically emailed to ACR Supply Co. upon completion.</p>
+
+    <div class="application-forms">
+      {% for application in applications %}
+        <a class="button" href="{{ application.url }}">{{ application.title }}</a>
+      {% endfor %}
+    </div>
+
+    <h3>Request an e-store account</h3>
+    <p><strong>All E-Store accounts are eligible for a 2% discount!</strong> Minus Refrigerant/Gas and Copper</p>
     {{ craft.freeform.form("eStoreAccountRequestForm").render({
       class: 'acr-form'
     }) }}
