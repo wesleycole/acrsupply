@@ -1098,7 +1098,8 @@ input[type="submit"],
 
 .vendor {
   margin-bottom: 20px;
-  width: 33.33333%; }
+  margin-right: 30px;
+  width: calc(33.3333% - 30px); }
 
 .vendor__image {
   margin-bottom: 10px; }
