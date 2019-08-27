@@ -1,0 +1,33 @@
+{#
+ # Associated Partnerships
+ # -------------------
+-#}
+
+{% extends "_layouts/site" %}
+
+{% block main %}
+<div class="container">
+  <h2>Associated Partnerships</h2>
+  {% if entry.vendors %}
+  <div class="vendors-grid">
+    {% for vendor in entry.vendors.all() %}
+    {% set image = vendor.vendorImage.one() %}
+    <div class="vendor">
+      {% if image %}
+      <img src={{image.url}} height="50" class="vendor__image" />
+      {% endif %}
+      <p class="vendor__name"><strong>
+          {{vendor.vendorLink.getLink({
+                  class: 'vendor__link',
+                  text: vendor.vendorName
+                })}}
+        </strong></p>
+      {% if vendor.vendorDescription %}
+      <p class="vendor__description">{{vendor.vendorDescription}}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
