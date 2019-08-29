@@ -72,10 +72,10 @@
                             {{ event.duration.humanReadable }}
                         </td>
                     </tr>
-                    {% if event['description'] is defined and event.description is not empty %}
+                    {% if event['eventDescription'] is defined and event.eventDescription is not empty %}
                     <tr>
                         <th>Details</th>
-                        <td>{{ event.description }}</td>
+                        <td>{{ event.eventDescription }}</td>
                     </tr>
                     {% endif %}
                     {% if event['eventPrice'] is defined and event.eventPrice is not empty %}
