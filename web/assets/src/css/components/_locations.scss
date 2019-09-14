@@ -1,13 +1,24 @@
 .locations-grid {
-  @include flexContainer(30);
+  @include mediaQuery(tablet-and-up) {
+    @include flexContainer(30);
 
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .location {
-  @include flexItem(30, 25%);
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mediaQuery(tablet-and-up) {
+    @include flexItem(30, 25%);
+    margin-bottom: 0;
+  }
 
   span {
     display: block;

@@ -104,9 +104,49 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"main.js":[function(require,module,exports) {
+})({"menu.js":[function(require,module,exports) {
+"use strict";
 
-},{}],"../../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.initMenu = initMenu;
+
+function initMenu(menu, menuButton) {
+  if (!menu || !menuButton) {
+    return;
+  }
+
+  menuButton.addEventListener('click', function () {
+    menu.classList.toggle('menu--is-open');
+  });
+  var menuItemsWithChildren = menu.getElementsByClassName('menu__list-item--has-children');
+
+  if (menuItemsWithChildren) {
+    Array.from(menuItemsWithChildren).forEach(function (item) {
+      var buttonList = item.querySelectorAll('button');
+
+      if (buttonList && buttonList.length) {
+        Array.from(buttonList).forEach(function (button) {
+          button.addEventListener('click', function () {
+            item.classList.toggle('menu__list-item--is-open');
+          });
+        });
+      }
+    });
+  }
+}
+},{}],"main.js":[function(require,module,exports) {
+"use strict";
+
+var _menu = require("./menu");
+
+(function () {
+  var menu = document.getElementById("menu");
+  var menuButton = document.getElementById("menuButton");
+  (0, _menu.initMenu)(menu, menuButton);
+})();
+},{"./menu":"menu.js"}],"../../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -133,7 +173,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62596" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64026" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
@@ -276,3 +316,4 @@ function hmrAccept(bundle, id) {
   });
 }
 },{}]},{},["../../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
+//# sourceMappingURL=/main.map

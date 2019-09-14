@@ -3,15 +3,20 @@
 }
 
 .footer__container {
-  align-items: center;
-  display: flex;
+
+  @include mediaQuery(tablet-and-up) {
+    align-items: center;
+    display: flex;
+  }
 }
 
 .footer-block {
-  width: 30%;
+  @include mediaQuery(tablet-and-up) {
+    width: 30%;
 
-  &:nth-child(2) {
-    width: 70%;
+    &:nth-child(2) {
+      width: 70%;
+    }
   }
 }
 

@@ -1,13 +1,14 @@
 {
   "require": {
-    "craftcms/cms": "3.1.23",
+    "craftcms/cms": "^3.1.23",
     "vlucas/phpdotenv": "^2.4.0",
-    "craftcms/element-api": "2.5.4",
+    "craftcms/element-api": "2.6.0",
     "swixpop/locate": "2.1.1",
-    "sebastianlenz/linkfield": "1.0.17",
-    "solspace/craft3-freeform": "2.5.17",
+    "sebastianlenz/linkfield": "1.0.19",
     "fortrabbit/craft-copy": "^1.0.0-RC5",
-    "solspace/craft3-calendar": "2.0.19"
+    "solspace/craft3-calendar": "2.0.24",
+    "solspace/craft-freeform": "3.3.1",
+    "craftcms/redactor": "2.3.3.2"
   },
   "autoload": {
     "psr-4": {

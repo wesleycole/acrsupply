@@ -5,8 +5,12 @@
 }
 
 .header__container {
-  align-items: center;
-  display: flex;
+  position: relative;
+
+  @include mediaQuery(desktop-and-up) {
+    align-items: center;
+    display: flex;
+  }
 }
 
 .header__logo {
