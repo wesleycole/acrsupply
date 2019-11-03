@@ -53,7 +53,7 @@
 	<div class="notification">
 		<div class="container">
 			<div class="notification__content">
-				{% if notificationImage.url %}
+				{% if notificationImage and notificationImage.url %}
 					<img src="{{notificationImage.url}}" />
 				{% endif %}
 				<p class="notification__text">{{notification.notificationText | raw}}</p>

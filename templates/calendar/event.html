@@ -84,6 +84,12 @@
                         <td>${{ event.eventPrice }}</td>
                     </tr>
                     {% endif %}
+                    {% if event['eventSoldOut'] is defined and event.eventSoldOut|length %}
+                    <tr>
+                        <th>Sold out</th>
+                        <td>This event is sold out.</td>
+                    </tr>
+                    {% endif %}
                     {% if event.repeating %}
                     <tr>
                         <th>Upcoming Recurrences</th>
@@ -135,8 +141,7 @@
                     {% endif %}
                 </table>
             </div>
-
-            {% if event.connectedForm is defined and event.connectedForm is not empty %}
+            {% if event.connectedForm is defined and event.connectedForm is not empty and not event.eventSoldOut|length %}
               <div class="event-registration-form">
                 <h3>{{ event.connectedForm.name }}</h3>
                 {{ event.connectedForm.render() }}
