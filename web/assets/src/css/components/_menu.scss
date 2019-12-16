@@ -9,7 +9,8 @@
   transition: all 0.5s ease;
   display: none;
 
-  .menu--is-open & {
+  .menu--is-open &,
+  .menu-footer & {
     visibility: visible;
     opacity: 1;
     display: block;
