@@ -1,0 +1,26 @@
+{#
+  # Profile assessments page template
+  # -------------------
+  #
+  # An `entry` variable will be automatically passed to this template, which will
+  # be set to the About entry.
+ -#}
+ 
+ {% extends "_layouts/site" %}
+ 
+ {% block main %}
+  <div class="container container--small">
+    <h2>Profile Assessment</h2>
+    {% if craft.request.getParam('password') == entry.pagePassword %}
+      <p>Please click the following link to self register for the profile assessment.</p>
+      <a href="https://www.profilesac.com/Main.aspx?S27FP8VB8C" target="_blank">Take the profile assessment</a>
+    {% else %}
+      <p>Please enter the password to gain access to the profile assessment.</p>
+      <form action="{{ craft.request.getUrl() }}" method="POST" accept-charset="utf-8" class="form-inline">
+        {{ getCsrfInput() }}
+        <input type="password" name="password" value="">
+        <button type="submit">Submit</button>
+      </form>
+    {% endif %}
+  </div>
+ {% endblock %}
