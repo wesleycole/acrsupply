@@ -1,0 +1,53 @@
+{#
+  # About page template
+  # -------------------
+  #
+  # This template gets loaded whenever the site's About page is requested,
+  # because the "About" single-entry section's Template setting is set to "about".
+  #
+  # An `entry` variable will be automatically passed to this template, which will
+  # be set to the About entry.
+ -#}
+
+{% extends "_layouts/site" %}
+
+{% block main %}
+<div class="container container--small">
+  <h2>COVID-19 Information</h2>
+  <p>Due to our growing concerns over COVID-19 (the coronavirus) ACR Supply is taking proactive steps to protect the
+    health of you, our teams, and all who visit our locations. ACR is deemed an Essential Business and we are under a
+    Stay-at-Home order. We are committed to the HVAC/R industry and taking measures to remain open for business at all
+    ACR locations. We have temporary guidelines in place during the current crisis:</p>
+  <p>ACR locations:</p>
+  <ul>
+    <li>ACR Store locations are open with rotating staff from 7:00am-4:30pm.</li>
+    <li>Emergency service is available 24 hours: after hour’s number 1-800-442-4044.</li>
+    <li>Each location is conducting business using CDC recommendations for social distancing, sanitation, general
+      hygiene and over all health of our teams and customers.</li>
+    <li>When possible, please use our ACR Estore for online orders. Visit www.acrsupply.com/request-account to sign up
+      for an Estore account.</li>
+    <li>Call ahead or Estore orders will be picked and located in a general area for pick up.</li>
+    <li>Request a curbside pickup, we will bring the order to your vehicle.</li>
+    <li>We still have delivery options, call ahead for details.</li>
+    <li>Showrooms are open at this time and we are continuing to monitor this to ensure the safety of our team and
+      customers.</li>
+  </ul>
+  <p>Territory managers, Inside Sales and Product Managers</p>
+  <ul>
+    <li>We will continue to conduct business using CDC recommendations on customer sites while utilizing webinar tools
+      for customers meetings. TM’s are available to take phone orders or Estore orders.</li>
+    <li>Inside Sales teams are still taking orders, emails and phone calls to help you facilitate your needs.</li>
+    <li>Product managers will continue conducting business using CDC recommendations on job sites while utilizing
+      webinar tools when needed.</li>
+  </ul>
+  <p>Training:</p>
+  <ul>
+    <li>All April training has been postponed and will be rescheduled soon.</li>
+    <li>Visit www.acrsupply.com/acr-university for online training opportunities.</li>
+  </ul>
+  <p>Due to the current crisis, ACR reserves the right to make changes without notice.</p>
+
+  <p>Please learn more about COVID-19 from resources at <a href="https://hardinet.org/covid-19-resources/">Hardi.</a>
+  </p>
+</div>
+{% endblock %}
