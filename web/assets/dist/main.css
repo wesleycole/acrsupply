@@ -1130,4 +1130,19 @@ input[type="submit"],
 .acr-cares-initiative {
   margin-top: 30px; }
 
+.touchpoints h3 {
+  margin-bottom: 0; }
+
+.touchpoints-grid {
+  align-items: center;
+  display: flex; }
+
+.touchpoint {
+  width: 25%; }
+  .touchpoint > h5 {
+    font-weight: normal; }
+  .touchpoint > span {
+    font-size: 36px;
+    font-weight: bold; }
+
 /*# sourceMappingURL=main.css.map */

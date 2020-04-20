@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "dev:js": "parcel './web/assets/src/js/main.js' './web/assets/src/js/locations.js' --out-dir ./web/assets/dist",
+    "dev:js": "parcel './web/assets/src/js/main.js' './web/assets/src/js/locations.js' './web/assets/src/js/touchpoints.js' --out-dir ./web/assets/dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.2.4",
+    "countup.js": "^2.0.4",
     "google-map-react": "^1.1.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
