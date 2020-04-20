@@ -5,6 +5,7 @@
 .DS_Store
 
 # ASSETS (added by fortrabbit/craft-copy)
-/web/assets/*
+/web/assets/images*
+/web/assets/promotions*
 
 /web/cpresources/*
