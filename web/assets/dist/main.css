@@ -1145,4 +1145,14 @@ input[type="submit"],
     font-size: 36px;
     font-weight: bold; }
 
+.mission-corner-updates {
+  margin-top: 32px; }
+
+.mission-corner-update {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 20px -12px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  padding: 16px 24px; }
+
 /*# sourceMappingURL=main.css.map */
