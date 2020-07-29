@@ -1151,6 +1151,8 @@ input[type="submit"],
 .mission-corner-image {
   flex: 1;
   margin-right: 24px; }
+  .mission-corner-image img {
+    margin-top: 52px; }
 
 .mission-corner-description {
   flex: 2; }
