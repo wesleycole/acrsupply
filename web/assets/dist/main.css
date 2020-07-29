@@ -1145,6 +1145,16 @@ input[type="submit"],
     font-size: 36px;
     font-weight: bold; }
 
+.mission-corner-information {
+  display: flex; }
+
+.mission-corner-image {
+  flex: 1;
+  margin-right: 24px; }
+
+.mission-corner-description {
+  flex: 2; }
+
 .mission-corner-updates {
   margin-top: 32px; }
 

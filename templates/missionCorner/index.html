@@ -8,24 +8,33 @@
   # An `entry` variable will be automatically passed to this template, which will
   # be set to the Locations entry.
  -#}
- 
- {% extends "_layouts/site" %}
- 
- {% block main %}
-   <div class="container">
-     <h2>Mission Corner</h2>
 
-     <p>Mission corner is our place to share "Good news" to the world! We are going to regularly update this page with updates from our team members on the "good news" that is occuring in and around them on a daily basis.</p>
-     <p>We are all struggling in this time of a global pandemic and divisivness between humanity; we want to do our part to help bring us all together and be a light to the world with the gospel of Jesus Christ.</p>
- 
-     <div class="mission-corner-updates">
-       {% for update in entry.missionCornerUpdates.all() %}
-         <div class="mission-corner-update">
-           <h4>{{update.updateTitle}}</h4>
-           {{update.updateDescription}}
-         </div>
-       {% endfor %}
-     </div>
-   </div>
- {% endblock %}
- 
+{% extends "_layouts/site" %}
+
+{% block main %}
+<div class="container">
+  <div class="mission-corner-information">
+    <div class="mission-corner-image">
+      <img src="{{ alias('@web/assets/images/mission-minute.png') }}" height="40" alt="ACR Supply Co.">
+    </div>
+    <div class="mission-corner-description">
+      <h2>Mission Corner</h2>
+
+      <p>Mission corner is our place to share "Good news" to the world! We are going to regularly update this page with
+        updates from our team members on the "good news" that is occuring in and around them on a daily basis.</p>
+      <p>We are all struggling in this time of a global pandemic and divisivness between humanity; we want to do our
+        part
+        to help bring us all together and be a light to the world with the gospel of Jesus Christ.</p>
+    </div>
+  </div>
+
+  <div class="mission-corner-updates">
+    {% for update in entry.missionCornerUpdates.all() %}
+    <div class="mission-corner-update">
+      <h4>{{update.updateTitle}}</h4>
+      {{update.updateDescription}}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
