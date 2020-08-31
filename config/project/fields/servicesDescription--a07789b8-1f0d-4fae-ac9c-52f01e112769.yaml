@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: d0819d73-9155-4ac5-9995-9fe3d7c32c74
+handle: servicesDescription
+instructions: ''
+name: Description
+searchable: '1'
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

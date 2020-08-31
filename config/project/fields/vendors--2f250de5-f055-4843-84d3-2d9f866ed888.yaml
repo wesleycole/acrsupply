@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 385df8b4-d6e4-4969-afda-8aece985aaa0
+handle: vendors
+instructions: ''
+name: Vendors
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_vendors}}'
+  localizeBlocks: false
+  maxBlocks: ''
+  minBlocks: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,13 @@
+siteUid: null
+sortOrder: 1
+template: /calendar/mini_cal
+uriParts:
+  - calendar/mini_cal/
+  -
+    - year
+    - '\d{4}'
+  - /
+  -
+    - month
+    - '(?:0?[1-9]|1[012])'
+uriPattern: 'calendar/mini_cal/<year:\d{4}>/<month:(?:0?[1-9]|1[012])>'

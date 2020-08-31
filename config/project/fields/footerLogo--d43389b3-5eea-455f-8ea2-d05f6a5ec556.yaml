@@ -1,0 +1,24 @@
+contentColumnType: string
+fieldGroup: 7a86ba31-dc42-491b-9a15-47a006756d8b
+handle: footerLogo
+instructions: ''
+name: 'Footer Logo'
+searchable: '1'
+settings:
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:0d114c35-470e-4a92-bbc0-a2c3e7d4fc8e'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: ''
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:0d114c35-470e-4a92-bbc0-a2c3e7d4fc8e'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

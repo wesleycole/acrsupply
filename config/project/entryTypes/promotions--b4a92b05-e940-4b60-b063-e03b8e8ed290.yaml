@@ -1,0 +1,25 @@
+fieldLayouts:
+  416230ab-5b37-4f4c-8ede-32e9fba6164b:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 301600aa-e3fc-4ac2-9dfc-7b599eb1f1fc
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a207db43-6f70-4166-9f80-4694e159fd67
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Settings
+        sortOrder: 1
+handle: promotions
+hasTitleField: true
+name: Promotions
+section: deefb807-a3f2-4b77-9b48-aa6bd8864f7f
+sortOrder: 1
+titleFormat: ''

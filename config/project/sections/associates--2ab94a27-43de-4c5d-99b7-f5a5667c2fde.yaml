@@ -1,0 +1,15 @@
+enableVersioning: true
+handle: associates
+name: Associates
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  d84c7a06-9ecd-42c4-b65c-ec087c3bba35:
+    enabledByDefault: true
+    hasUrls: true
+    template: associates
+    uriFormat: associates
+type: single

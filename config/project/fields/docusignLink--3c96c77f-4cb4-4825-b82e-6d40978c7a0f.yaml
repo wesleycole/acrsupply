@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: a52e17fb-cb69-4edc-b475-e026ff1114f8
+handle: docusignLink
+instructions: ''
+name: 'Docusign Link'
+searchable: true
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

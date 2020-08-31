@@ -1,0 +1,11 @@
+contentColumnType: string
+fieldGroup: 7a86ba31-dc42-491b-9a15-47a006756d8b
+handle: googlePlayStoreLink
+instructions: ''
+name: 'Google Play Store LInk'
+searchable: '1'
+settings:
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

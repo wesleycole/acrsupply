@@ -1,0 +1,25 @@
+contentColumnType: string
+fieldGroup: 77926385-cc33-4146-a9d8-bb682af7623a
+handle: newsletterImage
+instructions: ''
+name: Image
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:0d114c35-470e-4a92-bbc0-a2c3e7d4fc8e'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add an image'
+  singleUploadLocationSource: 'volume:0d114c35-470e-4a92-bbc0-a2c3e7d4fc8e'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: d1b2d3e0-caff-4265-8c15-310da7c6b14f
+handle: teamMemberInitiatives
+instructions: ''
+name: 'Team Member Initiatives'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_teammemberinitiatives}}'
+  localizeBlocks: false
+  maxBlocks: ''
+  minBlocks: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

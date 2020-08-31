@@ -1,0 +1,21 @@
+fieldLayouts:
+  d54ded79-c194-433a-ab8f-688521561942:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: 'Page Title'
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: b127582a-bb04-47a7-b881-1ecfd3499eac
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Culture Survey'
+        sortOrder: 1
+handle: about
+hasTitleField: true
+name: About
+section: fc6457f4-0483-4d21-a704-9f47893b5ada
+sortOrder: 1
+titleFormat: ''

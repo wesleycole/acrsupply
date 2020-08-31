@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 18
+template: /calendar/export
+uriParts:
+  - calendar/export/calendar/
+  -
+    - number
+    - \d+
+uriPattern: 'calendar/export/calendar/<number:\d+>'

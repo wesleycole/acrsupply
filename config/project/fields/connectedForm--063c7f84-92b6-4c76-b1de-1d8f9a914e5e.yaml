@@ -1,0 +1,9 @@
+contentColumnType: integer
+fieldGroup: d1b2d3e0-caff-4265-8c15-310da7c6b14f
+handle: connectedForm
+instructions: ''
+name: 'Connected Form'
+searchable: true
+translationKeyFormat: null
+translationMethod: none
+type: Solspace\Freeform\FieldTypes\FormFieldType

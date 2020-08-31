@@ -1,0 +1,29 @@
+fieldLayouts:
+  e9678a4c-360c-483a-a91f-9dff15e607c8:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: e7ff456f-d45d-43e0-bc06-9c9ffe9468f2
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 6ecf8a37-13bc-46bc-afd1-e9505338259d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f988b15f-c79d-4498-8900-22b3859c00cc
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Notification Information'
+        sortOrder: 1
+handle: notifications
+hasTitleField: true
+name: Notifications
+section: c3c14b51-1050-404a-b79d-ac586030e8a4
+sortOrder: 1
+titleFormat: ''

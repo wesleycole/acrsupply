@@ -1,0 +1,17 @@
+contentColumnType: 'decimal(12,2)'
+fieldGroup: bc26c1a0-4632-4aa7-b379-350cf7c768b7
+handle: eventPrice
+instructions: ''
+name: 'Event Price'
+searchable: true
+settings:
+  decimals: '2'
+  defaultValue: null
+  max: null
+  min: '0'
+  prefix: $
+  size: null
+  suffix: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

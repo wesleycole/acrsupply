@@ -1,0 +1,221 @@
+field: f4c519dd-a990-40e1-a0c9-696bbe1ab8fc
+fieldLayouts:
+  6d5c94c9-83a9-4be7-af5f-8189aeb32f4c:
+    tabs:
+      -
+        fields:
+          16531a44-dbf0-4400-bcdd-ecdad520a697:
+            required: '0'
+            sortOrder: '5'
+          3dee8338-1e08-4d25-bdde-b00ee509d056:
+            required: '1'
+            sortOrder: '1'
+          93c4bbd8-db6c-4a65-987f-b31e3462b6c4:
+            required: '0'
+            sortOrder: '4'
+          9938542d-a4f6-4f92-96a8-c8bcc7818139:
+            required: '0'
+            sortOrder: '3'
+          fce33d4d-1efd-4868-8cbe-9f00ddbb8fa6:
+            required: '0'
+            sortOrder: '2'
+        name: Content
+        sortOrder: '1'
+fields:
+  16531a44-dbf0-4400-bcdd-ecdad520a697:
+    contentColumnType: text
+    fieldGroup: null
+    handle: callToActionLink
+    instructions: ''
+    name: Link
+    searchable: '1'
+    settings:
+      allowCustomText: '1'
+      allowTarget: ''
+      allowedLinkNames:
+        3: entry
+        4: site
+        6: custom
+        7: email
+        8: tel
+        9: url
+      defaultLinkName: asset
+      defaultText: ''
+      enableAriaLabel: ''
+      enableTitle: ''
+      typeSettings:
+        __assoc__:
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - site
+            -
+              __assoc__:
+                -
+                  - sites
+                  - '*'
+          -
+            - user
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - custom
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: typedlinkfield\fields\LinkField
+  3dee8338-1e08-4d25-bdde-b00ee509d056:
+    contentColumnType: text
+    fieldGroup: null
+    handle: callToActionTitle
+    instructions: ''
+    name: 'Call to Action Title'
+    searchable: '1'
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  93c4bbd8-db6c-4a65-987f-b31e3462b6c4:
+    contentColumnType: string
+    fieldGroup: null
+    handle: callToActionBackgroundColor
+    instructions: ''
+    name: 'Background Color'
+    searchable: '1'
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Red
+            -
+              - value
+              - red
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Blue
+            -
+              - value
+              - blue
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  9938542d-a4f6-4f92-96a8-c8bcc7818139:
+    contentColumnType: string
+    fieldGroup: null
+    handle: callToActionImage
+    instructions: ''
+    name: Image
+    searchable: '1'
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:0d114c35-470e-4a92-bbc0-a2c3e7d4fc8e'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:0d114c35-470e-4a92-bbc0-a2c3e7d4fc8e'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  fce33d4d-1efd-4868-8cbe-9f00ddbb8fa6:
+    contentColumnType: text
+    fieldGroup: null
+    handle: callToActionDescription
+    instructions: ''
+    name: Description
+    searchable: '1'
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: callToAction
+name: 'Call To Action'
+sortOrder: '1'

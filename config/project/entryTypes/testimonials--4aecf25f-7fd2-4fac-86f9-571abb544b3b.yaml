@@ -1,0 +1,25 @@
+fieldLayouts:
+  fbe40f7a-faae-4d94-b250-3f1c367c966e:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 4de3e644-b5ec-4104-89c5-3449fa4175b2
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 06a1d088-9aea-4440-8997-c731e1282b28
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Testimonial Content'
+        sortOrder: '1'
+handle: testimonials
+hasTitleField: '1'
+name: Testimonials
+section: 33cd06cd-ae75-4b06-ae73-5ab87ecf2963
+sortOrder: '1'
+titleFormat: null

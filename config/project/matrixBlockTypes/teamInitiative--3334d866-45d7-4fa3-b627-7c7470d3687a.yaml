@@ -1,0 +1,32 @@
+field: 68d45d5a-b25d-4eba-9741-54d6ab9ff499
+fieldLayouts:
+  e2264f39-c7a9-4baa-b4a8-e1add7ff7a89:
+    tabs:
+      -
+        fields:
+          9f53424a-206a-4123-bd8f-9ab550dbf4d8:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  9f53424a-206a-4123-bd8f-9ab550dbf4d8:
+    contentColumnType: text
+    fieldGroup: null
+    handle: initiativeTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: teamInitiative
+name: Initiative
+sortOrder: 1

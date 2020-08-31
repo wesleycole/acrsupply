@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: bc26c1a0-4632-4aa7-b379-350cf7c768b7
+handle: eventSoldOut
+instructions: 'Select this if the event is sold out and you are no longer accepting registrations'
+name: 'Event Sold Out'
+searchable: true
+settings:
+  multi: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Sold out'
+        -
+          - value
+          - soldOut
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

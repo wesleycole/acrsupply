@@ -1,0 +1,7 @@
+handle: trainingAndEducation
+hasTitleField: false
+name: 'Training and Education'
+section: ab2deffb-873a-4836-82c1-42b602c2b02f
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleLabel: null

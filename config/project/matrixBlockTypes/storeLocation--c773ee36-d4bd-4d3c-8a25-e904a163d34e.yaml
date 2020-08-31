@@ -1,0 +1,87 @@
+field: ede61ed2-c66a-4d59-8ef2-a5b1f3630dda
+fieldLayouts:
+  5ea35531-4f32-434f-8ab9-27d853b46432:
+    tabs:
+      -
+        fields:
+          5d063c02-f819-4258-82df-5a5ec9568e0a:
+            required: false
+            sortOrder: 1
+          701fee08-7b80-4ba0-981f-7212238bb0d5:
+            required: false
+            sortOrder: 2
+          cf1d4f60-e469-4979-89db-5395eeacf025:
+            required: false
+            sortOrder: 3
+          ecdf0853-6e09-413b-b63f-2a03ea7a9a1b:
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  5d063c02-f819-4258-82df-5a5ec9568e0a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: locationName
+    instructions: ''
+    name: Name
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  701fee08-7b80-4ba0-981f-7212238bb0d5:
+    contentColumnType: text
+    fieldGroup: null
+    handle: address
+    instructions: ''
+    name: Address
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cf1d4f60-e469-4979-89db-5395eeacf025:
+    contentColumnType: text
+    fieldGroup: null
+    handle: phoneNumber
+    instructions: ''
+    name: 'Phone Number'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  ecdf0853-6e09-413b-b63f-2a03ea7a9a1b:
+    contentColumnType: string
+    fieldGroup: null
+    handle: googleMapLink
+    instructions: ''
+    name: 'Google Map Link'
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: storeLocation
+name: 'Store Location'
+sortOrder: 1

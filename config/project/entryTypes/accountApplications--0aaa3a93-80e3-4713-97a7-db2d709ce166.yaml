@@ -1,0 +1,21 @@
+fieldLayouts:
+  feccbf72-2836-4afb-9222-fc9a6a89058a:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 3c96c77f-4cb4-4825-b82e-6d40978c7a0f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Application Settings'
+        sortOrder: 1
+handle: accountApplications
+hasTitleField: true
+name: 'Account Applications'
+section: 082c194b-c8db-4d18-9ec5-00a15d83f6c5
+sortOrder: 1
+titleFormat: ''

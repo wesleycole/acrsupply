@@ -1,0 +1,21 @@
+fieldLayouts:
+  b1453ee0-13ac-4ef2-86f6-7ad0bb193ba4:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 38df0a62-08cf-4dc3-9ae2-03b0b2807e2a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Year Recipients'
+        sortOrder: 1
+handle: scholarshipYearsRecipients
+hasTitleField: true
+name: 'Scholarship Years & Recipients'
+section: 39adccaf-5f1e-48ec-834d-5ccfe0d3c1a4
+sortOrder: 1
+titleFormat: ''

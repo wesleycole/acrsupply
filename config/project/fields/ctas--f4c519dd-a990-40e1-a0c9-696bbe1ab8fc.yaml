@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 28b86dd3-c932-453a-ad70-b5c437d0c06b
+handle: ctas
+instructions: ''
+name: CTAs
+searchable: '1'
+settings:
+  contentTable: '{{%matrixcontent_ctas}}'
+  localizeBlocks: false
+  maxBlocks: ''
+  minBlocks: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

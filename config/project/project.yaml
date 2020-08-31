@@ -1,0 +1,121 @@
+dateModified: 1598723391
+email:
+  fromEmail: wesley.cole87@gmail.com
+  fromName: 'ACR Supply Co.'
+  template: null
+  transportSettings:
+    encryptionMethod: ''
+    host: smtp.sendgrid.net
+    password: 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
+    port: '25'
+    timeout: '10'
+    useAuthentication: '1'
+    username: apikey
+  transportType: craft\mail\transportadapters\Smtp
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+plugins:
+  calendar:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.6
+    settings:
+      allDay: false
+      authoredEventEditOnly: ''
+      defaultView: month
+      demoBannerDisabled: true
+      descriptionFieldHandle: null
+      eventDuration: 60
+      guestAccess: null
+      locationFieldHandle: null
+      overlapThreshold: 5
+      quickCreateEnabled: '1'
+      showDisabledEvents: '1'
+      showMiniCal: ''
+      timeInterval: 30
+  copy:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  element-api:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  freeform:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.5
+    settings:
+      ajaxByDefault: false
+      autoScrollToErrors: '1'
+      blockedEmails: null
+      blockedEmailsError: 'Invalid Email Address'
+      blockedIpAddresses: null
+      blockedKeywords: null
+      blockedKeywordsError: 'Invalid Entry Data'
+      defaultTemplates: '1'
+      defaultView: dashboard
+      emailTemplateDirectory: null
+      emailTemplateStorage: db
+      fieldDisplayOrder: name
+      fillWithGet: false
+      footerScripts: '0'
+      formSubmitDisable: ''
+      formTemplateDirectory: null
+      formattingTemplate: flexbox.html
+      freeformHoneypot: true
+      freeformHoneypotEnhancement: true
+      pluginName: Forms
+      purgableSpamAgeInDays: null
+      purgableSubmissionAgeInDays: '0'
+      recaptchaBehaviour: display_error
+      recaptchaEnabled: false
+      recaptchaKey: null
+      recaptchaMinScore: 0.5
+      recaptchaSecret: null
+      recaptchaType: v2_checkbox
+      removeNewlines: ''
+      renderFormHtmlInCpViews: '1'
+      salesforce_client_id: null
+      salesforce_client_secret: null
+      salesforce_password: null
+      salesforce_username: null
+      scriptInsertLocation: form
+      showErrorsForBlockedEmails: false
+      showErrorsForBlockedKeywords: false
+      showTutorial: false
+      spamFolderEnabled: false
+      spamProtectionBehaviour: simulate_success
+      submissionThrottlingCount: null
+      submissionThrottlingTimeFrame: null
+  locate:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 2.1.1
+    settings:
+      autocompleteOptions: ''
+      googleMapsApiKey: AIzaSyAk6zLZpAFtgZGHt7IThIhAeqihEckOIrQ
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  typedlinkfield:
+    enabled: '1'
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+system:
+  edition: solo
+  live: true
+  name: 'ACR Supply Co.'
+  schemaVersion: 3.5.13
+  timeZone: America/New_York
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,202 @@
+field: 2f250de5-f055-4843-84d3-2d9f866ed888
+fieldLayouts:
+  03ec905a-edcb-49cf-a232-cd75003091e0:
+    tabs:
+      -
+        fields:
+          110f068c-c2a8-423c-bd11-3b164f3f2bda:
+            required: false
+            sortOrder: 3
+          1922e2c3-45fa-4d9a-9373-19fd47e07602:
+            required: false
+            sortOrder: 4
+          2dff0473-bcc2-40cf-8442-78ebd5fec7e8:
+            required: false
+            sortOrder: 2
+          37c33a47-e59c-4e8e-9c60-ac535f437113:
+            required: true
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  110f068c-c2a8-423c-bd11-3b164f3f2bda:
+    contentColumnType: text
+    fieldGroup: null
+    handle: vendorLink
+    instructions: ''
+    name: 'Vendor Link'
+    searchable: true
+    settings:
+      allowCustomText: ''
+      allowTarget: '1'
+      allowedLinkNames:
+        9: url
+      autoNoReferrer: ''
+      defaultLinkName: url
+      defaultText: ''
+      enableAriaLabel: ''
+      enableTitle: ''
+      typeSettings:
+        __assoc__:
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - site
+            -
+              __assoc__:
+                -
+                  - sites
+                  - '*'
+          -
+            - user
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - custom
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - solspaceCalendar-event
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: typedlinkfield\fields\LinkField
+  1922e2c3-45fa-4d9a-9373-19fd47e07602:
+    contentColumnType: string
+    fieldGroup: null
+    handle: vendorImage
+    instructions: ''
+    name: 'Vendor Image'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  2dff0473-bcc2-40cf-8442-78ebd5fec7e8:
+    contentColumnType: text
+    fieldGroup: null
+    handle: vendorDescription
+    instructions: ''
+    name: 'Vendor Description'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  37c33a47-e59c-4e8e-9c60-ac535f437113:
+    contentColumnType: text
+    fieldGroup: null
+    handle: vendorName
+    instructions: ''
+    name: 'Vendor Name'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: vendor
+name: Vendor
+sortOrder: 1

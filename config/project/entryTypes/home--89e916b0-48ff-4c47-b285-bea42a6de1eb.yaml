@@ -1,0 +1,53 @@
+fieldLayouts:
+  50e9b4f2-ddf3-409f-be4f-cd314baaee51:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: d1e02aa7-b33b-49c4-a198-dae3f462e65a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a07789b8-1f0d-4fae-ac9c-52f01e112769
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a4ac9646-eeb8-4757-99be-592e59cf2acb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Services
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: f4c519dd-a990-40e1-a0c9-696bbe1ab8fc
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: '50/50 Section'
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 1bc2be8f-63f9-4d51-8d5c-3d07b7c84ed5
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: c2b3d873-50c8-4e57-820d-6aa965f39b79
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: c56d653e-9e7d-4ef9-aa84-7ec8606d088c
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Newsletter
+        sortOrder: 3
+handle: home
+hasTitleField: false
+name: Home
+section: 148a408c-a3e0-469e-aa18-46200336c446
+sortOrder: 1
+titleFormat: '{section.name|raw}'

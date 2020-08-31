@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: missionCorner
+name: 'Mission Corner'
+propagationMethod: all
+siteSettings:
+  d84c7a06-9ecd-42c4-b65c-ec087c3bba35:
+    enabledByDefault: true
+    hasUrls: true
+    template: missionCorner/index
+    uriFormat: mission-corner
+type: single

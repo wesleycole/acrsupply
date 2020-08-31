@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 75772b73-5f13-442a-b9a8-8c5a6015f039
+handle: notificationText
+instructions: ''
+name: 'Notification Text'
+searchable: '1'
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

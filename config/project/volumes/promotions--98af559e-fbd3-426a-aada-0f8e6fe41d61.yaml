@@ -1,0 +1,8 @@
+handle: promotions
+hasUrls: true
+name: Promotions
+settings:
+  path: '@webroot/assets/images/promotions'
+sortOrder: null
+type: craft\volumes\Local
+url: /assets/images/promotions

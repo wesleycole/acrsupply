@@ -1,0 +1,204 @@
+field: a4ac9646-eeb8-4757-99be-592e59cf2acb
+fieldLayouts:
+  bbb4f2b3-f970-48bc-b558-4c21dcf0d911:
+    tabs:
+      -
+        fields:
+          28cf2be5-8f7e-4677-b055-7b02264a5217:
+            required: false
+            sortOrder: 2
+          2e5417ea-9053-4e0f-9f16-0301f26dcf2a:
+            required: false
+            sortOrder: 3
+          54f564b2-6d31-46e7-a148-ca738ab72142:
+            required: false
+            sortOrder: 1
+          e2c19f04-7528-4c56-a8d0-090788c2d466:
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  28cf2be5-8f7e-4677-b055-7b02264a5217:
+    contentColumnType: text
+    fieldGroup: null
+    handle: serviceDescription
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2e5417ea-9053-4e0f-9f16-0301f26dcf2a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: serviceLink
+    instructions: ''
+    name: Link
+    searchable: true
+    settings:
+      allowCustomText: '1'
+      allowTarget: ''
+      allowedLinkNames:
+        3: entry
+        9: url
+      autoNoReferrer: ''
+      defaultLinkName: entry
+      defaultText: ''
+      enableAriaLabel: ''
+      enableTitle: ''
+      typeSettings:
+        __assoc__:
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - site
+            -
+              __assoc__:
+                -
+                  - sites
+                  - '*'
+          -
+            - user
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+          -
+            - custom
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+                -
+                  - allowAliases
+                  - ''
+          -
+            - solspaceCalendar-event
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+                -
+                  - allowCustomQuery
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: typedlinkfield\fields\LinkField
+  54f564b2-6d31-46e7-a148-ca738ab72142:
+    contentColumnType: text
+    fieldGroup: null
+    handle: serviceTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e2c19f04-7528-4c56-a8d0-090788c2d466:
+    contentColumnType: string
+    fieldGroup: null
+    handle: serviceImage
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:0d114c35-470e-4a92-bbc0-a2c3e7d4fc8e'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: '1'
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: service
+name: Service
+sortOrder: 1

@@ -1,0 +1,25 @@
+fieldLayouts:
+  5a96d75b-bcb5-45a8-b004-87efea6204ec:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: afceddc5-9590-4182-abf6-bb387268c36d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 68d45d5a-b25d-4eba-9741-54d6ab9ff499
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Initiatives
+        sortOrder: 1
+handle: acrCares
+hasTitleField: false
+name: 'ACR Cares'
+section: 8b99fb28-9536-4c55-8adc-cff3e561baff
+sortOrder: 1
+titleFormat: '{section.name|raw}'

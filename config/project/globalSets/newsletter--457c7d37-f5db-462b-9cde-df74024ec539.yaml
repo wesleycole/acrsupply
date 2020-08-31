@@ -1,0 +1,18 @@
+fieldLayouts:
+  928d3988-5927-4713-b134-fad5ce7b6342:
+    tabs:
+      -
+        fields:
+          1bc2be8f-63f9-4d51-8d5c-3d07b7c84ed5:
+            required: false
+            sortOrder: 2
+          c2b3d873-50c8-4e57-820d-6aa965f39b79:
+            required: false
+            sortOrder: 3
+          c56d653e-9e7d-4ef9-aa84-7ec8606d088c:
+            required: false
+            sortOrder: 1
+        name: Settings
+        sortOrder: 1
+handle: newsletter
+name: Newsletter

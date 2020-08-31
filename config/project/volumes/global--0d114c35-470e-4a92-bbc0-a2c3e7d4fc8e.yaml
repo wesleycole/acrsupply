@@ -1,0 +1,8 @@
+handle: global
+hasUrls: true
+name: Global
+settings:
+  path: '@webroot/assets/images'
+sortOrder: '1'
+type: craft\volumes\Local
+url: /assets/images

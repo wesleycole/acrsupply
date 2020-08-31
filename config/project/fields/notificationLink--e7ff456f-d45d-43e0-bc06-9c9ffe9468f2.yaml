@@ -1,0 +1,96 @@
+contentColumnType: text
+fieldGroup: 75772b73-5f13-442a-b9a8-8c5a6015f039
+handle: notificationLink
+instructions: ''
+name: 'Notification Link'
+searchable: '1'
+settings:
+  allowCustomText: '1'
+  allowTarget: '1'
+  allowedLinkNames:
+    3: entry
+    9: url
+  defaultLinkName: url
+  defaultText: ''
+  enableAriaLabel: ''
+  enableTitle: ''
+  typeSettings:
+    __assoc__:
+      -
+        - asset
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - category
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - site
+        -
+          __assoc__:
+            -
+              - sites
+              - '*'
+      -
+        - user
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - custom
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - email
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - tel
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+translationKeyFormat: null
+translationMethod: none
+type: typedlinkfield\fields\LinkField

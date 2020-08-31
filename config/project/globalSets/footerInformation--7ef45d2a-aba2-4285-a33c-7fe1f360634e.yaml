@@ -1,0 +1,25 @@
+fieldLayouts:
+  160be074-78ff-4339-b327-91a2f57bf793:
+    tabs:
+      -
+        fields:
+          877d25f5-76f5-467b-9739-03e87cdffbbe:
+            required: '0'
+            sortOrder: '1'
+        name: General
+        sortOrder: '1'
+      -
+        fields:
+          009e6ae8-8fde-401d-a29e-784a1170ebfd:
+            required: '0'
+            sortOrder: '1'
+          13e8e656-c68f-463c-86e6-b51e83c7d2a1:
+            required: '0'
+            sortOrder: '3'
+          654aca73-0f2c-4695-89ba-4bd3e6db1e42:
+            required: '0'
+            sortOrder: '2'
+        name: Links
+        sortOrder: '2'
+handle: footerInformation
+name: 'Footer Information'

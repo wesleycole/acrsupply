@@ -1,0 +1,21 @@
+fieldLayouts:
+  638b1cc2-ab56-4bdb-b6e6-2662c51bb46c:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 2f250de5-f055-4843-84d3-2d9f866ed888
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Vendors
+        sortOrder: 1
+handle: associatedPartnerships
+hasTitleField: false
+name: 'Associated Partnerships'
+section: 6ac4363f-d821-4d79-9edb-99f4e9d9db1f
+sortOrder: 1
+titleFormat: '{section.name|raw}'

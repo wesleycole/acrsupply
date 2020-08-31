@@ -1,0 +1,99 @@
+contentColumnType: text
+fieldGroup: d1b2d3e0-caff-4265-8c15-310da7c6b14f
+handle: pageLink
+instructions: ''
+name: 'Page Link'
+searchable: '1'
+settings:
+  allowCustomText: '1'
+  allowTarget: '1'
+  allowedLinkNames:
+    3: entry
+    4: site
+    7: email
+    8: tel
+    9: url
+  defaultLinkName: entry
+  defaultText: ''
+  enableAriaLabel: '1'
+  enableTitle: '1'
+  typeSettings:
+    __assoc__:
+      -
+        - asset
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - category
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - site
+        -
+          __assoc__:
+            -
+              - sites
+              - '*'
+      -
+        - user
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - custom
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - email
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - tel
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+translationKeyFormat: null
+translationMethod: none
+type: typedlinkfield\fields\LinkField

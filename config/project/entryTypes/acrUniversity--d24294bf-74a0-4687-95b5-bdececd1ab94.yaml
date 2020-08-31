@@ -1,0 +1,7 @@
+handle: acrUniversity
+hasTitleField: false
+name: 'ACR University'
+section: 883c261c-f170-4756-bdb0-0854d38b7ce2
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleLabel: null

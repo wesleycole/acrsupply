@@ -1,0 +1,89 @@
+field: a15c1194-864e-48e5-a0ec-e9f4cf7f18c3
+fieldLayouts:
+  b3106f0c-d7cf-49d1-a0eb-ecdd46ae83fe:
+    tabs:
+      -
+        fields:
+          09960857-5f43-4948-9bc4-1a67ad0b8d12:
+            required: false
+            sortOrder: 3
+          65ba2514-bc59-44b2-a1c7-8234fc806851:
+            required: false
+            sortOrder: 2
+          dc7603c3-b996-4245-94ad-19f1bb9c84a3:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  09960857-5f43-4948-9bc4-1a67ad0b8d12:
+    contentColumnType: string
+    fieldGroup: null
+    handle: updateImage
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  65ba2514-bc59-44b2-a1c7-8234fc806851:
+    contentColumnType: text
+    fieldGroup: null
+    handle: updateDescription
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  dc7603c3-b996-4245-94ad-19f1bb9c84a3:
+    contentColumnType: text
+    fieldGroup: null
+    handle: updateTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: update
+name: Update
+sortOrder: 1

@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 77926385-cc33-4146-a9d8-bb682af7623a
+handle: newsletterDescription
+instructions: ''
+name: Description
+searchable: '1'
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

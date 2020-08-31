@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 3a435df0-e9ed-4290-a496-2073b7800d15
+handle: testimonialAuthor
+instructions: ''
+name: Author
+searchable: '1'
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

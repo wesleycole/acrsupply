@@ -1,0 +1,117 @@
+contentColumnType: text
+fieldGroup: a52e17fb-cb69-4edc-b475-e026ff1114f8
+handle: creditApplicationLink
+instructions: ''
+name: 'Credit Application Link'
+searchable: true
+settings:
+  allowCustomText: '1'
+  allowTarget: ''
+  allowedLinkNames: '*'
+  autoNoReferrer: ''
+  defaultLinkName: asset
+  defaultText: ''
+  enableAriaLabel: ''
+  enableTitle: ''
+  typeSettings:
+    __assoc__:
+      -
+        - asset
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - allowCustomQuery
+              - ''
+      -
+        - category
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - allowCustomQuery
+              - ''
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - allowCustomQuery
+              - ''
+      -
+        - site
+        -
+          __assoc__:
+            -
+              - sites
+              - '*'
+      -
+        - user
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - allowCustomQuery
+              - ''
+      -
+        - custom
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - email
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - tel
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+            -
+              - allowAliases
+              - ''
+      -
+        - solspaceCalendar-event
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - allowCustomQuery
+              - ''
+translationKeyFormat: null
+translationMethod: none
+type: typedlinkfield\fields\LinkField

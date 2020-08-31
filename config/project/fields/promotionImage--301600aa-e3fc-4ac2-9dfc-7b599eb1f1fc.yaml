@@ -1,0 +1,25 @@
+contentColumnType: string
+fieldGroup: d1b2d3e0-caff-4265-8c15-310da7c6b14f
+handle: promotionImage
+instructions: ''
+name: 'Promotion Image'
+searchable: true
+settings:
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add an Image'
+  singleUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: '1'
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

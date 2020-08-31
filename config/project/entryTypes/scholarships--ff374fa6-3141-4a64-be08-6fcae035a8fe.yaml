@@ -1,0 +1,21 @@
+fieldLayouts:
+  34393a6d-219e-4b6f-bf64-e4fe179d6970:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 38df0a62-08cf-4dc3-9ae2-03b0b2807e2a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Scholarship Years'
+        sortOrder: 1
+handle: scholarships
+hasTitleField: false
+name: Scholarships
+section: b94ea8c9-c5ce-4409-b4d6-1bce2ead4787
+sortOrder: 1
+titleFormat: '{section.name|raw}'

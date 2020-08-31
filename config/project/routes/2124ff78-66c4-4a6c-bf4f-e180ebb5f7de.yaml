@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 11
+template: /calendar/calendars
+uriParts:
+  - calendar/calendars/
+  -
+    - slug
+    - '[^\/]+'
+uriPattern: 'calendar/calendars/<slug:[^\/]+>'

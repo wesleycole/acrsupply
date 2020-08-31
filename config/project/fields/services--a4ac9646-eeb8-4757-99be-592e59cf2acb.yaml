@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: d0819d73-9155-4ac5-9995-9fe3d7c32c74
+handle: services
+instructions: ''
+name: Services
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_services}}'
+  maxBlocks: '6'
+  minBlocks: '1'
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

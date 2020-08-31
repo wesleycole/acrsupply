@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: 7a86ba31-dc42-491b-9a15-47a006756d8b
+handle: footerTagline
+instructions: ''
+name: 'Footer Tagline'
+searchable: '1'
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

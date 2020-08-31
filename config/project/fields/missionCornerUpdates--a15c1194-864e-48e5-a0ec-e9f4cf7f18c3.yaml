@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 7a86ba31-dc42-491b-9a15-47a006756d8b
+handle: missionCornerUpdates
+instructions: ''
+name: 'Mission Corner Updates'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_missioncornerupdates}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

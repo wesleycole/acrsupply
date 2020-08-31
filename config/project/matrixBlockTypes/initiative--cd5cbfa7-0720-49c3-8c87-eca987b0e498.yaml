@@ -1,0 +1,80 @@
+field: afceddc5-9590-4182-abf6-bb387268c36d
+fieldLayouts:
+  8e770b24-247e-49ec-978f-1cbe2a2d8bec:
+    tabs:
+      -
+        fields:
+          5004af34-6543-4cb8-a1c3-157bf57abd95:
+            required: false
+            sortOrder: 1
+          611a42ca-02e8-45e9-9b65-de21b6a002e5:
+            required: false
+            sortOrder: 3
+          8c95b6b9-ce93-4231-942f-7d44e4a0d9a8:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  5004af34-6543-4cb8-a1c3-157bf57abd95:
+    contentColumnType: text
+    fieldGroup: null
+    handle: initiativeTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  611a42ca-02e8-45e9-9b65-de21b6a002e5:
+    contentColumnType: string
+    fieldGroup: null
+    handle: initiativeImage
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:98af559e-fbd3-426a-aada-0f8e6fe41d61'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  8c95b6b9-ce93-4231-942f-7d44e4a0d9a8:
+    contentColumnType: text
+    fieldGroup: null
+    handle: initiativeDescription
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: initiative
+name: Initiative
+sortOrder: 1

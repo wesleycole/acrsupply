@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 0b8de195-d37c-4f38-aa45-654e5aadd202
+handle: surveyResults
+instructions: ''
+name: 'Survey Results'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_surveyresults}}'
+  localizeBlocks: false
+  maxBlocks: ''
+  minBlocks: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

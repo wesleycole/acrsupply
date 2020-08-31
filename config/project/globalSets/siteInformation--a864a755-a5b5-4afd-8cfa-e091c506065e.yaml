@@ -1,0 +1,12 @@
+fieldLayouts:
+  54e4880b-8f72-49a9-8732-0bacdc5c96b7:
+    tabs:
+      -
+        fields:
+          f988b15f-c79d-4498-8900-22b3859c00cc:
+            required: '0'
+            sortOrder: '1'
+        name: 'General Site Information'
+        sortOrder: '1'
+handle: siteInformation
+name: 'Site Information'

@@ -1,0 +1,32 @@
+field: 38df0a62-08cf-4dc3-9ae2-03b0b2807e2a
+fieldLayouts:
+  ef8c2f7d-a520-47b0-893c-c81cf5833442:
+    tabs:
+      -
+        fields:
+          4ee6f98c-88cc-49e8-bb1d-19b68fd9cd74:
+            required: true
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  4ee6f98c-88cc-49e8-bb1d-19b68fd9cd74:
+    contentColumnType: text
+    fieldGroup: null
+    handle: recipientName
+    instructions: ''
+    name: Name
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: recipient
+name: Recipient
+sortOrder: 1

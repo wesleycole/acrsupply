@@ -1,0 +1,21 @@
+fieldLayouts:
+  dbb7b849-058e-4556-8ed1-440fed40ef31:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: null
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: ede61ed2-c66a-4d59-8ef2-a5b1f3630dda
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Locations Listing'
+        sortOrder: '1'
+handle: locations
+hasTitleField: '0'
+name: Locations
+section: b19546f5-4ea4-4336-8cd0-1623e4279468
+sortOrder: '1'
+titleFormat: '{section.name|raw}'

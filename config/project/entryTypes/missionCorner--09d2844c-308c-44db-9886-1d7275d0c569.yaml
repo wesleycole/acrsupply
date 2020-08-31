@@ -1,0 +1,21 @@
+fieldLayouts:
+  3ae838af-d116-4529-afc8-392be7e760ab:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: a15c1194-864e-48e5-a0ec-e9f4cf7f18c3
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Updates
+        sortOrder: 1
+handle: missionCorner
+hasTitleField: false
+name: 'Mission Corner'
+section: d65502a8-cefb-4eaf-8243-9551c19fd09a
+sortOrder: 1
+titleFormat: '{section.name|raw}'
