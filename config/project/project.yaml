@@ -1,12 +1,13 @@
-dateModified: 1598927227
+dateModified: 1598928010
 email:
   fromEmail: wesley.cole87@gmail.com
   fromName: 'ACR Supply Co.'
+  replyToEmail: null
   template: null
   transportSettings:
     encryptionMethod: ''
     host: smtp.sendgrid.net
-    password: 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
+    password: $SENDGRID_API_KEY
     port: '25'
     timeout: '10'
     useAuthentication: '1'
