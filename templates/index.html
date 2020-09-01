@@ -18,6 +18,7 @@ craft.entries() .section('testimonials') .one() %} {% extends "_layouts/site" %}
         href="{{ entry.pageLink.url }}"
         target="__blank"
         rel="noopener noreferrer"
+        title="{{ entry.pageLink.title }}"
       >
         <li
           class="glide__slide"
