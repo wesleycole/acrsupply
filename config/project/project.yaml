@@ -1,4 +1,4 @@
-dateModified: 1598926998
+dateModified: 1598927227
 email:
   fromEmail: wesley.cole87@gmail.com
   fromName: 'ACR Supply Co.'
@@ -47,7 +47,7 @@ plugins:
   freeform:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.5
+    schemaVersion: 3.0.8
     settings:
       ajaxByDefault: false
       autoScrollToErrors: '1'

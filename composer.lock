@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19f3a0850bf6b7cf4f7417559e7d325b",
+    "content-hash": "107ebd0e32335424ad578fdbda2eb795",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -3684,28 +3684,28 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "3.5.10",
+            "version": "3.8.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/56f787dc1a08c5034fa480b1a8edb53895dbe099",
-                "reference": "56f787dc1a08c5034fa480b1a8edb53895dbe099",
+                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/76eff5f22654c7ee41adc4abe9ef63bc567c737e",
+                "reference": "76eff5f22654c7ee41adc4abe9ef63bc567c737e",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.1.21",
+                "craftcms/cms": "^3.4.0",
                 "egulias/email-validator": "^2.1",
                 "hashids/hashids": "^2.0",
                 "nesbot/carbon": "^1.22.1|^2.19",
                 "phpoffice/phpspreadsheet": "^1.6.0",
                 "solspace/craft3-commons": "^1.0.21",
-                "stripe/stripe-php": "^6.6.0",
-                "symfony/filesystem": "^2.8|^3.0|^4.0",
-                "symfony/finder": "^2.8|^3.0|^4.0",
-                "symfony/property-access": "^2.8|^3.0|^4.0"
+                "stripe/stripe-php": "^7.27.3",
+                "symfony/filesystem": "^2.8|^3.0|^4.0|^5.0",
+                "symfony/finder": "^2.8|^3.0|^4.0|^5.0",
+                "symfony/property-access": "^2.8|^3.0|^4.0|^5.0"
             },
             "type": "craft-plugin",
             "extra": {
-                "schemaVersion": "3.0.5",
+                "schemaVersion": "3.0.8",
                 "handle": "freeform",
                 "class": "Solspace\\Freeform\\Freeform",
                 "name": "Freeform",
@@ -3728,7 +3728,7 @@
                 }
             ],
             "description": "The most reliable, intuitive and powerful form builder for Craft.",
-            "time": "2020-01-14T21:06:05+00:00"
+            "time": "2020-08-31T21:47:02+00:00"
         },
         {
             "name": "solspace/craft3-calendar",
@@ -3803,24 +3803,18 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v6.43.1",
+            "version": "v7.50.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/42fcdaf99c44bb26937223f8eae1f263491d5ab8",
-                "reference": "42fcdaf99c44bb26937223f8eae1f263491d5ab8",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/0195e3dcc34123df9a441069dbf08db17c3b025d",
+                "reference": "0195e3dcc34123df9a441069dbf08db17c3b025d",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "1.*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~2.0",
-                "symfony/process": "~2.8"
+                "php": ">=5.6.0"
             },
             "type": "library",
             "extra": {
@@ -3833,7 +3827,6 @@
                     "Stripe\\": "lib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3850,7 +3843,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2019-08-29T16:56:12+00:00"
+            "time": "2020-08-28T20:17:35+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

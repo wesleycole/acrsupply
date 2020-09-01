@@ -6,7 +6,7 @@
     "swixpop/locate": "2.1.1",
     "sebastianlenz/linkfield": "1.0.19",
     "solspace/craft3-calendar": "3.0.12",
-    "solspace/craft-freeform": "3.5.10",
+    "solspace/craft-freeform": "3.8.0",
     "craftcms/redactor": "2.4.0",
     "fortrabbit/craft-copy": "^1.0.0-RC9"
   },
