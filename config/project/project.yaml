@@ -1,4 +1,4 @@
-dateModified: 1598723391
+dateModified: 1598926998
 email:
   fromEmail: wesley.cole87@gmail.com
   fromName: 'ACR Supply Co.'
@@ -20,7 +20,7 @@ plugins:
   calendar:
     edition: standard
     enabled: true
-    schemaVersion: 2.0.6
+    schemaVersion: 3.1.0
     settings:
       allDay: false
       authoredEventEditOnly: ''
