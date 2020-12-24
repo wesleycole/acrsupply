@@ -2,129 +2,179 @@
 whenever the site's homepage is requested, because # the "Homepage" single-entry
 section's Template setting is set to "index". # # An `entry` variable will be
 automatically passed to this template, which will # be set to the Homepage
-entry. -#} {% set promotionsQuery = craft.entries() .section('promotions')
-.orderBy('postDate desc') .limit(3) %} {% set promotions = promotionsQuery.all()
-%} {% set notification = craft.entries() .section('notifications') .one() %} {%
-set notificationImage = notification.singleImage.one() %} {% set testimonial =
-craft.entries() .section('testimonials') .one() %} {% extends "_layouts/site" %}
-{% block main %}
+entry. -#} 
+{% set promotionsQuery = craft.entries().section('promotions').orderBy('postDate desc').limit(3) %} 
+{% set promotions = promotionsQuery.all() %} 
 
-<div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      {% for entry in promotions %} {% set image = entry.promotionImage.one() %}
-      {% if entry.pageLink.url %}
-      <a
-        href="{{ entry.pageLink.url }}"
-        target="__blank"
-        rel="noopener noreferrer"
-        title="{{ entry.pageLink.title }}"
-      >
+{% set bannersQuery = craft.entries().section('banners').orderBy('postDate desc').limit(3) %}
+{% set banners = bannersQuery.all() %}
+
+{% set notification = craft.entries() .section('notifications') .one() %} 
+{% set notificationImage = notification.singleImage.one() %} 
+
+{% set testimonial = craft.entries() .section('testimonials') .one() %} 
+
+{% extends "_layouts/site" %}
+
+  {% block main %}
+
+  {% if banners|length >= 1 %}
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        {% for entry in banners %} {% set image = entry.image.one() %}
+        <li
+          class="glide__slide glide__slide--overlay-{{entry.backgroundOverlayColor.value}}"
+          style="background-image: url({{ image.url }});"
+        >
+        <div class="glide__content">
+        <p>{{entry.contentArea}}</p>
+        {% if entry.pageLink.url %}
+        <a
+          class="button"
+          href="{{ entry.pageLink.url }}"
+          target="__blank"
+          rel="noopener noreferrer"
+          title="{{ entry.pageLink.title }}"
+        >
+        Click me
+        </a>
+        </div>
+        {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% if banners|length > 1 %}
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        prev
+      </button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+        next
+      </button>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if banners|length == 0 %}
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        {% for entry in promotions %} {% set image = entry.promotionImage.one() %}
+        {% if entry.pageLink.url %}
+        <a
+          href="{{ entry.pageLink.url }}"
+          target="__blank"
+          rel="noopener noreferrer"
+          title="{{ entry.pageLink.title }}"
+        >
+          <li
+            class="glide__slide"
+            style="background-image: url({{ image.url }});"
+          ></li>
+        </a>
+        {% else %}
         <li
           class="glide__slide"
           style="background-image: url({{ image.url }});"
         ></li>
-      </a>
-      {% else %}
-      <li
-        class="glide__slide"
-        style="background-image: url({{ image.url }});"
-      ></li>
-      {% endif %} {% endfor %}
-    </ul>
-  </div>
-  {% if promotions|length > 1 %}
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-      prev
-    </button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-      next
-    </button>
+        {% endif %} {% endfor %}
+      </ul>
+    </div>
+    {% if promotions|length > 1 %}
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        prev
+      </button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+        next
+      </button>
+    </div>
+    {% endif %}
   </div>
   {% endif %}
-</div>
-<div class="promotions"></div>
 
-<div class="notification">
-  <div class="container">
-    <div class="notification__content">
-      {% if notificationImage and notificationImage.url %}
-      <img src="{{notificationImage.url}}" />
-      {% endif %}
-      <p class="notification__text">{{notification.notificationText | raw}}</p>
-    </div>
-    {{notification.notificationLink.getLink({ class: 'button notification__link'
-    })}}
-  </div>
-</div>
-
-<div class="container">
-  <div class="services">
-    <div class="section-header">
-      <h2 class="section-header__title">{{entry.servicesTitle}}</h2>
-      <p class="section-header__description">{{entry.servicesDescription}}</p>
-    </div>
-
-    <div class="services-blocks">
-      {% for block in entry.services.all() %} {% set serviceImage =
-      block.serviceImage.one() %}
-      <div class="service-blocks__block">
-        {% if serviceImage %}
-        <div
-          class="service-block__block-image"
-          style="background-image: url({{ serviceImage.url }})"
-        ></div>
+  <div class="notification">
+    <div class="container">
+      <div class="notification__content">
+        {% if notificationImage and notificationImage.url %}
+        <img src="{{notificationImage.url}}" />
         {% endif %}
-        <h4 class="service-blocks__block-title">{{block.serviceTitle}}</h4>
-        <p class="service-blocks__block-description">
-          {{block.serviceDescription}}
-        </p>
-        {{block.serviceLink.getLink({ class: 'service-blocks__block-link' })}}
+        <p class="notification__text">{{notification.notificationText | raw}}</p>
       </div>
-      {% endfor %}
+      {{notification.notificationLink.getLink({ class: 'button notification__link'
+      })}}
     </div>
   </div>
-</div>
-<div class="cta-blocks">
-  {% for block in entry.ctas.all() %} {% set image =
-  block.callToActionImage.one() %}
-  <div
-    class="cta-blocks__block cta-blocks__block--{{block.callToActionBackgroundColor}}"
-    style="background-image: url({{ image.url }})"
-  >
-    <h4 class="cta-blocks__block-title">{{block.callToActionTitle}}</h4>
-    <p class="cta-blocks__block-description">
-      {{block.callToActionDescription}}
-    </p>
-    {{block.callToActionLink.getLink({ class: 'cta-blocks__block-link button
-    button--white button--large' })}}
-  </div>
-  {% endfor %}
-</div>
 
-{% if testimonial %}
-<div class="container">
-  <div class="testimonials">
-    <div class="testimonials__block">
-      <div class="testimonial">
-        <p class="testimonial__content">{{testimonial.testimonalcontent}}</p>
-        <p class="testimonial__author">{{testimonial.testimonialAuthor}}</p>
+  <div class="container">
+    <div class="services">
+      <div class="section-header">
+        <h2 class="section-header__title">{{entry.servicesTitle}}</h2>
+        <p class="section-header__description">{{entry.servicesDescription}}</p>
+      </div>
+
+      <div class="services-blocks">
+        {% for block in entry.services.all() %} {% set serviceImage =
+        block.serviceImage.one() %}
+        <div class="service-blocks__block">
+          {% if serviceImage %}
+          <div
+            class="service-block__block-image"
+            style="background-image: url({{ serviceImage.url }})"
+          ></div>
+          {% endif %}
+          <h4 class="service-blocks__block-title">{{block.serviceTitle}}</h4>
+          <p class="service-blocks__block-description">
+            {{block.serviceDescription}}
+          </p>
+          {{block.serviceLink.getLink({ class: 'service-blocks__block-link' })}}
+        </div>
+        {% endfor %}
       </div>
     </div>
-    <div class="testimonials__block testimonials-cta">
-      <h3 class="testimonials-cta__title">
-        <span>We Love Our Customers</span>Testimonials
-      </h3>
+  </div>
+  <div class="cta-blocks">
+    {% for block in entry.ctas.all() %} {% set image =
+    block.callToActionImage.one() %}
+    <div
+      class="cta-blocks__block cta-blocks__block--{{block.callToActionBackgroundColor}}"
+      style="background-image: url({{ image.url }})"
+    >
+      <h4 class="cta-blocks__block-title">{{block.callToActionTitle}}</h4>
+      <p class="cta-blocks__block-description">
+        {{block.callToActionDescription}}
+      </p>
+      {{block.callToActionLink.getLink({ class: 'cta-blocks__block-link button
+      button--white button--large' })}}
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if testimonial %}
+  <div class="container">
+    <div class="testimonials">
+      <div class="testimonials__block">
+        <div class="testimonial">
+          <p class="testimonial__content">{{testimonial.testimonalcontent}}</p>
+          <p class="testimonial__author">{{testimonial.testimonialAuthor}}</p>
+        </div>
+      </div>
+      <div class="testimonials__block testimonials-cta">
+        <h3 class="testimonials-cta__title">
+          <span>We Love Our Customers</span>Testimonials
+        </h3>
+      </div>
     </div>
   </div>
-</div>
-{% endif %} {% endblock %} {% block foot %}
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  {% endif %} {% endblock %} {% block foot %}
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
-<script>
-  new Glide(".glide", {
-    autoplay: 5000,
-  }).mount();
-</script>
+  <script>
+    new Glide(".glide", {
+      autoplay: 5000,
+    }).mount();
+  </script>
 {% endblock %}

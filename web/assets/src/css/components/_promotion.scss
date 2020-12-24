@@ -6,5 +6,59 @@
 .glide__slide {
   background-position: center;
   background-size: cover;
-  min-height: 450px;
+  min-height: 550px;
+  position: relative;
+}
+
+.glide__slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.glide__slide--overlay-red::after {
+  background-color: rgba(194, 44, 37, 0.6);
+}
+
+.glide__slide--overlay-blue::after {
+  background-color: rgba(39, 106, 166, 0.6);
+}
+
+
+.glide__content {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  padding: 0 32px;
+  left: 0;
+  right: 0;
+  max-width: 860px;
+  text-align: center;
+  z-index: 100;
+
+  h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  p {
+    color: white;
+    font-size: 24px;
+  }
+
+  figure {
+    margin: 0;
+  }
+}
+
+.glide__arrow {
+  @media screen and (max-width: 758px) {
+    top: 90%; 
+    transform: translateY(0);
+  }
 }
