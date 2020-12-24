@@ -29,15 +29,15 @@ entry. -#}
         >
         <div class="glide__content">
         <p>{{entry.contentArea}}</p>
-        {% if entry.pageLink.url %}
+        {% if entry.pageLink.getUrl() %}
         <a
           class="button"
-          href="{{ entry.pageLink.url }}"
+          href="{{ entry.pageLink.getUrl() }}"
           target="__blank"
           rel="noopener noreferrer"
-          title="{{ entry.pageLink.title }}"
+          title="{{ entry.pageLink.getText() }}"
         >
-        Click me
+        {{ entry.pageLink.getText() }}
         </a>
         </div>
         {% endif %}
