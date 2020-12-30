@@ -1,0 +1,47 @@
+{% extends "_layouts/blog" %}
+
+{% block main %}
+	<div class="container">
+    <div class="content-sidebar">
+      <div class="content-sidebar--content">
+        <div class="blog-entry">
+          {% if entry.featuredImage %}
+            {% set featuredImage = entry.featuredImage.one() %}
+            {% if featuredImage %}
+              <img src="{{ featuredImage.getUrl('featuredImage') }}" 
+                width="{{ featuredImage.getWidth('featuredImage') }}" 
+                height="{{ featuredImage.getHeight('featuredImage') }}" 
+                class="blog-entry__image--featured"
+              >
+            {% endif %}
+          {% endif %}
+          <h1 class="blog-entry__title">{{entry.title}}</h1> 
+          <div class="blog-entry__meta">
+            <div class="blog-entry__date">Date: {{entry.postDate | date('M d, Y')}}</div>
+          </div>
+        </div>
+        <div class="blog-entry__content">
+          {% for block in entry.postContent.all() %}
+            {% if block.type == 'text' %}
+              {{block.text}}
+            {% elseif block.type == 'image' %}
+              {% set image = block.image.one() %}
+              {% if image %}
+                <img src="{{ image.getUrl('entry') }}" 
+                  width="{{ image.getWidth('entry') }}" 
+                  height="{{ image.getHeight('entry') }}" 
+                  class="blog-entry__image"
+                >
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="content-sidebar--aside">
+        <div class="aside__block">
+          <h5 class="aside__title">Categories</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

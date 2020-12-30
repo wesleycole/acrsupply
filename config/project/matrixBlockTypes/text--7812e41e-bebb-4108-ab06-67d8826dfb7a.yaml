@@ -1,0 +1,42 @@
+field: 73fc13e0-c810-4063-86c3-81fba6a91094
+fieldLayouts:
+  ed20ebb1-b995-4314-9bae-37120c57526a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6e24740e-5aac-4707-8ac7-fd3c9a71d6ad
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6e24740e-5aac-4707-8ac7-fd3c9a71d6ad:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: text
+name: Text
+sortOrder: 1

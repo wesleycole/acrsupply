@@ -1,0 +1,26 @@
+.blog-entry {
+  &__title {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  &__meta {
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin-top: 32px;
+  }
+
+  &__image {
+    border-radius: 6px;
+    margin: 16px 0;
+
+    &--featured {
+      margin-bottom: 24px;
+    }
+  }
+}
