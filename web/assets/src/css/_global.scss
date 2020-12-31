@@ -30,7 +30,9 @@ body {
   &--content {
     width: 100%;
     @include mediaQuery(tablet-and-up) {
-      width: 70%;
+      margin-right: 24px;
+      padding-right: 24px;
+      width: calc(70% - 24px);
     }
   }
 
@@ -39,17 +41,19 @@ body {
     width: 100%;
 
     @include mediaQuery(tablet-and-up) {
-      border-left: 1px solid #ccc;
-      height: 100vh;
-      margin-left: 24px;
       margin-top: 0;
-      padding-left: 24px;
-      width: calc(30% - 24px);
+      width: 30%;
     }
   }
 }
 
 .aside {
+  &__block {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+    padding: 16px 24px;
+  }
 
   &__title {
     color: #555;

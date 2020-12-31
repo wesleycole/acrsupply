@@ -1,0 +1,62 @@
+{% extends "_layouts/blog" %}
+
+{% set categoryQuery = craft.entries()
+    .relatedTo(category)
+    .limit(5) %}
+
+{% paginate categoryQuery as pageInfo, blogEntries %}
+
+{% set blogCateogoryQuery = craft.categories().group('blogCategories') %}
+
+{% block main %}
+  <div class="container">
+    <div class="content-sidebar">
+      <div class="content-sidebar--content">
+        {% for entry in blogEntries %}
+          <article class="blog-entry blog-entry--archive">
+            <div class="blog-entry__header">
+              {% if entry.featuredImage %}
+                {% set featuredImage = entry.featuredImage.one() %}
+                {% if featuredImage %}
+                  <img src="{{ featuredImage.getUrl('featuredImage') }}" class="blog-entry__image blog-entry__image--featured">
+                {% endif %}
+              {% endif %}
+              <h1 class="blog-entry__title">{{entry.title}}</h1> 
+              <div class="blog-entry__meta">
+                <div class="blog-entry__date">{{entry.postDate | date('M d, Y')}}</div>
+              </div>
+            </div>
+            <div class="blog-entry__content">
+              <p>{{entry.summary}}</p>
+            </div>
+            <div class="blog-entry__footer">
+              <a class="button" href="{{ entry.url }}">Read more</a>
+            </div>
+          </article>
+        {% endfor %}
+        <div class="blog-footer">
+          <div>
+            {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
+          </div>
+          <div>
+            {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next Page</a>{% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="content-sidebar--aside">
+        <div class="aside__block">
+          <h5 class="aside__title">Category: {{category.title}}</h5>
+          {% set categories = blogCateogoryQuery.all() %}
+          <ul class="categories-list">
+            {% nav categoryItem in categories %}
+              {% if categoryItem.title != category.title %}
+              <li class="categories-list__item">
+                <a href="{{categoryItem.url}}">{{categoryItem.title}}</a>
+              </li>
+              {% endif %}
+            {% endnav %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
