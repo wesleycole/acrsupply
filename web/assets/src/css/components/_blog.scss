@@ -1,7 +1,14 @@
 .blog-entry {
   &__title {
+    color: #333;
     font-size: 32px;
     margin-top: 0;
+    text-decoration: none;
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
   }
 
   &__meta {
@@ -13,6 +20,11 @@
 
   &__content {
     margin-top: 32px;
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+    }
   }
 
   &__image {
@@ -44,17 +56,15 @@
 }
 
 .blog-footer {
-  background: white;
-  border: 1px solid #eee;
-  border-radius: 4px;
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
-  padding: 16px;
+  padding: 16px 0;
 
   a {
-    background: transparent;
+    background: #eee;
     border-radius: 4px;
+    color: #333;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
@@ -62,7 +72,7 @@
     transition: background 0.2s ease-in-out;
 
     &:hover {
-      background: #eee;
+      background: #ccc;
     }
   }
 }

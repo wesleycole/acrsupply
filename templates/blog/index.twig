@@ -12,28 +12,34 @@
   <div class="container">
     <div class="content-sidebar">
       <div class="content-sidebar--content">
-        {% for entry in blogEntries %}
-          <article class="blog-entry blog-entry--archive">
-            <div class="blog-entry__header">
-              {% if entry.featuredImage %}
-                {% set featuredImage = entry.featuredImage.one() %}
-                {% if featuredImage %}
-                  <img src="{{ featuredImage.getUrl('featuredImage') }}" class="blog-entry__image blog-entry__image--featured">
+        {% if blogEntries|length > 0 %}
+          {% for entry in blogEntries %}
+            <article class="blog-entry blog-entry--archive">
+              <div class="blog-entry__header">
+                {% if entry.featuredImage %}
+                  {% set featuredImage = entry.featuredImage.one() %}
+                  {% if featuredImage %}
+                    <img src="{{ featuredImage.getUrl('featuredImage') }}" class="blog-entry__image blog-entry__image--featured">
+                  {% endif %}
                 {% endif %}
-              {% endif %}
-              <h1 class="blog-entry__title">{{entry.title}}</h1> 
-              <div class="blog-entry__meta">
-                <div class="blog-entry__date">{{entry.postDate | date('M d, Y')}}</div>
+                <h1 class="blog-entry__title"><a href="{{entry.url}}">{{entry.title}}</a></h1> 
+                <div class="blog-entry__meta">
+                  <div class="blog-entry__date">{{entry.postDate | date('M d, Y')}}</div>
+                </div>
               </div>
-            </div>
-            <div class="blog-entry__content">
-              <p>{{entry.summary}}</p>
-            </div>
-            <div class="blog-entry__footer">
-              <a class="button" href="{{ entry.url }}">Read more</a>
-            </div>
-          </article>
-        {% endfor %}
+              <div class="blog-entry__content">
+                <p>{{entry.summary}}</p>
+              </div>
+              <div class="blog-entry__footer">
+                <a class="button" href="{{ entry.url }}">Read more</a>
+              </div>
+            </article>
+          {% endfor %}
+        {% else %}
+          <h3>No Results</h3>
+          <p>Sorry, but it does not look like there are any blog posts.</p>
+          <a href="/" class="button">Go to the home page</a>
+        {% endif %}
         <div class="blog-footer">
           <div>
             {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
