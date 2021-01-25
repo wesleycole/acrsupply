@@ -9,3 +9,7 @@
 /web/assets/promotions*
 
 /web/cpresources/*
+
+
+# Prevent to .sql files (added by fortrabbit/craft-copy)
+*.sql
