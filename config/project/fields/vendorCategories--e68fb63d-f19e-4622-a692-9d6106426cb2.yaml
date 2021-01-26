@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: 385df8b4-d6e4-4969-afda-8aece985aaa0
+handle: vendorCategories
+instructions: ''
+name: 'Vendor Categories'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: 'group:89d6fa76-910e-40e4-95ae-1f072f7cdbb1'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

@@ -1,5 +1,5 @@
 {
   "vetur.validation.template": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.enable": false
+  "editor.formatOnSave": true
 }

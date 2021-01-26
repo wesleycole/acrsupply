@@ -673,7 +673,8 @@ input[type="submit"],
 .header__logo {
   margin: 0; }
   .header__logo img {
-    display: block; }
+    display: block;
+    height: 40px; }
 
 .menu {
   margin-left: auto; }
@@ -800,6 +801,12 @@ input[type="submit"],
   list-style-type: none;
   margin: 0;
   padding: 0; }
+
+.footer-info-links img {
+  height: 60px; }
+
+.footer-logo img {
+  height: 40px; }
 
 .notification {
   border-bottom: 1px solid #cccccc;

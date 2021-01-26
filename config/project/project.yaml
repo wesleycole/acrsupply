@@ -1,4 +1,4 @@
-dateModified: 1609309288
+dateModified: 1611630757
 email:
   fromEmail: wesley.cole87@gmail.com
   fromName: 'ACR Supply Co.'
@@ -13,10 +13,6 @@ email:
     useAuthentication: '1'
     username: apikey
   transportType: craft\mail\transportadapters\Smtp
-graphql:
-  publicToken:
-    enabled: false
-    expiryDate: null
 plugins:
   calendar:
     edition: standard
@@ -109,7 +105,7 @@ plugins:
     schemaVersion: 1.0.0
     settings: null
 system:
-  edition: solo
+  edition: pro
   live: true
   name: 'ACR Supply Co.'
   schemaVersion: 3.5.13

@@ -1,0 +1,40 @@
+fieldLayouts:
+  724cbdfd-d7cb-4e0b-8095-2cc18e0bdf8d:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: vendors
+name: Vendors
+siteSettings:
+  d84c7a06-9ecd-42c4-b65c-ec087c3bba35:
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: e495e225-6ca5-427c-a544-ddeb8c12ef7c

@@ -5,27 +5,41 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "dev:js": "parcel './web/assets/src/js/main.js' './web/assets/src/js/locations.js' './web/assets/src/js/touchpoints.js' --out-dir ./web/assets/dist",
+    "dev:js": "parcel './web/assets/src/js/main.js' './web/assets/src/js/locations.js' './web/assets/src/js/touchpoints.js' './web/assets/src/js/vendors.jsx' --out-dir ./web/assets/dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.12.10",
     "@babel/preset-react": "^7.0.0",
-    "gulp": "^4.0.0",
-    "gulp-changed": "^3.2.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.1.5",
+    "babel-plugin-macros": "^3.0.1",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-using": "^0.1.1",
-    "parcel-bundler": "^1.11.0"
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
     "@glidejs/glide": "^3.2.4",
     "countup.js": "^2.0.4",
     "google-map-react": "^1.1.2",
+    "graphql": "^15.4.0",
+    "graphql-request": "^3.4.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-google-maps": "^9.4.5"
+    "react-google-maps": "^9.4.5",
+    "react-query": "^3.6.0",
+    "twin.macro": "^2.1.1"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
   }
 }
