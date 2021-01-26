@@ -104,7 +104,7 @@ function Vendors() {
               Clear
             </button>
           ) : (
-            <span tw="text-xs font-bold mr-2 inline-block">Categories</span>
+            <span tw="text-xs font-bold mr-2 inline-block">Categories:</span>
           )}
           {categoriesData?.categories?.map((category) => (
             <span
