@@ -38033,7 +38033,9 @@ function Vendors() {
     search: search,
     relatedTo: relatedTo
   }),
-      data = _useVendors.data;
+      data = _useVendors.data,
+      isLoading = _useVendors.isLoading,
+      isFetching = _useVendors.isFetching;
 
   var _useVendorCategories = useVendorCategories(),
       categoriesData = _useVendorCategories.data;
@@ -38138,7 +38140,7 @@ function Vendors() {
       "display": "inline-block"
     },
     "data-tw": "text-xs font-bold mr-2 inline-block"
-  }, "Categories"), categoriesData === null || categoriesData === void 0 ? void 0 : (_categoriesData$categ = categoriesData.categories) === null || _categoriesData$categ === void 0 ? void 0 : _categoriesData$categ.map(function (category) {
+  }, "Categories:"), categoriesData === null || categoriesData === void 0 ? void 0 : (_categoriesData$categ = categoriesData.categories) === null || _categoriesData$categ === void 0 ? void 0 : _categoriesData$categ.map(function (category) {
     return (0, _react.jsx)("span", {
       key: category.id,
       onClick: function onClick() {
@@ -38173,7 +38175,7 @@ function Vendors() {
       "gridTemplateColumns": "repeat(4, minmax(0, 1fr))"
     },
     "data-tw": "grid gap-4 grid-cols-4"
-  }, hasEntries ? data === null || data === void 0 ? void 0 : (_data$entries2 = data.entries) === null || _data$entries2 === void 0 ? void 0 : _data$entries2.map(function (entry) {
+  }, isLoading || isFetching ? (0, _react.jsx)("p", null, "Loading...") : hasEntries ? data === null || data === void 0 ? void 0 : (_data$entries2 = data.entries) === null || _data$entries2 === void 0 ? void 0 : _data$entries2.map(function (entry) {
     return (0, _react.jsx)("div", {
       key: entry.id
     }, (0, _react.jsx)("span", null, entry.title));
@@ -38213,7 +38215,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57286" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53014" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

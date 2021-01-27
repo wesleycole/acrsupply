@@ -77,7 +77,7 @@ function Vendors() {
 
   const [relatedTo, setRelatedTo] = useState("");
 
-  const { data } = useVendors({ search, relatedTo });
+  const { data, isLoading, isFetching } = useVendors({ search, relatedTo });
   const { data: categoriesData } = useVendorCategories();
 
   const isCategorySelected = (id) => id === relatedTo;
@@ -122,7 +122,9 @@ function Vendors() {
         </div>
       </div>
       <div tw="grid gap-4 grid-cols-4">
-        {hasEntries ? (
+        {isLoading || isFetching ? (
+          <p>Loading...</p>
+        ) : hasEntries ? (
           data?.entries?.map((entry) => (
             <div key={entry.id}>
               <span>{entry.title}</span>
