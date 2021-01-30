@@ -37975,7 +37975,7 @@ function useVendors() {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return (0, _graphqlRequest.request)("https://acrsupply.ddev.site/api", (0, _graphqlRequest.gql)(_templateObject2()), _objectSpread(_objectSpread({}, search ? {
+            return (0, _graphqlRequest.request)("https://acrsupply.com/api", (0, _graphqlRequest.gql)(_templateObject2()), _objectSpread(_objectSpread({}, search ? {
               search: search
             } : {}), relatedTo ? {
               relatedTo: relatedTo
@@ -38000,7 +38000,7 @@ function useVendorCategories() {
         switch (_context2.prev = _context2.next) {
           case 0:
             _context2.next = 2;
-            return (0, _graphqlRequest.request)("https://acrsupply.ddev.site/api", (0, _graphqlRequest.gql)(_templateObject3()));
+            return (0, _graphqlRequest.request)("https://acrsupply.com/api", (0, _graphqlRequest.gql)(_templateObject3()));
 
           case 2:
             return _context2.abrupt("return", _context2.sent);
@@ -38172,9 +38172,12 @@ function Vendors() {
     css: {
       "display": "grid",
       "gap": "1rem",
-      "gridTemplateColumns": "repeat(4, minmax(0, 1fr))"
+      "gridTemplateColumns": "repeat(2, minmax(0, 1fr))",
+      "@media (min-width: 768px)": {
+        "gridTemplateColumns": "repeat(4, minmax(0, 1fr))"
+      }
     },
-    "data-tw": "grid gap-4 grid-cols-4"
+    "data-tw": "grid gap-4 grid-cols-2 md:grid-cols-4"
   }, isLoading || isFetching ? (0, _react.jsx)("p", null, "Loading...") : hasEntries ? data === null || data === void 0 ? void 0 : (_data$entries2 = data.entries) === null || _data$entries2 === void 0 ? void 0 : _data$entries2.map(function (entry) {
     return (0, _react.jsx)("div", {
       key: entry.id
@@ -38215,7 +38218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53014" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63352" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
