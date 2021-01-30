@@ -34,7 +34,7 @@ function useDebounce(value, delay) {
 function useVendors({ search, relatedTo } = {}) {
   return useQuery(["vendors", search, relatedTo], async () => {
     return await request(
-      "https://acrsupply.ddev.site/api",
+      "https://acrsupply.com/api",
       gql`
         query($search: String, $relatedTo: [QueryArgument]) {
           entries(
