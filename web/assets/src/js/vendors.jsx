@@ -58,7 +58,7 @@ function useVendors({ search, relatedTo } = {}) {
 function useVendorCategories() {
   return useQuery("vendorCategories", async () => {
     return await request(
-      "https://acrsupply.ddev.site/api",
+      "https://acrsupply.com/api",
       gql`
         query {
           categories(group: "vendors") {
@@ -121,7 +121,7 @@ function Vendors() {
           ))}
         </div>
       </div>
-      <div tw="grid gap-4 grid-cols-4">
+      <div tw="grid gap-4 grid-cols-2 md:grid-cols-4">
         {isLoading || isFetching ? (
           <p>Loading...</p>
         ) : hasEntries ? (
