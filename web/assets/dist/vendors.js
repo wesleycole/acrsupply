@@ -37975,7 +37975,7 @@ function useVendors() {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return (0, _graphqlRequest.request)("https://acrsupply.com/api", (0, _graphqlRequest.gql)(_templateObject2()), _objectSpread(_objectSpread({}, search ? {
+            return (0, _graphqlRequest.request)("https://www.acrsupply.com/api", (0, _graphqlRequest.gql)(_templateObject2()), _objectSpread(_objectSpread({}, search ? {
               search: search
             } : {}), relatedTo ? {
               relatedTo: relatedTo
@@ -38000,7 +38000,7 @@ function useVendorCategories() {
         switch (_context2.prev = _context2.next) {
           case 0:
             _context2.next = 2;
-            return (0, _graphqlRequest.request)("https://acrsupply.com/api", (0, _graphqlRequest.gql)(_templateObject3()));
+            return (0, _graphqlRequest.request)("https://www.acrsupply.com/api", (0, _graphqlRequest.gql)(_templateObject3()));
 
           case 2:
             return _context2.abrupt("return", _context2.sent);
@@ -38218,7 +38218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63352" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63921" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
