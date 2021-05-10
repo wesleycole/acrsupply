@@ -1,29 +1,37 @@
-{#
- # About page template
- # -------------------
- #
- # This template gets loaded whenever the site's About page is requested,
- # because the "About" single-entry section's Template setting is set to "about".
- #
- # An `entry` variable will be automatically passed to this template, which will
- # be set to the About entry.
--#}
-
-{% extends "_layouts/site" %}
-
-{% block main %}
-	<div class="container container--small">
-    <h2>Associates</h2>
-    <p>Associates can find links below to their most used sites and applications for work.</p>
-    <div class="associate-links">
-      <a title="PayCor" href="https://enterprise.paycor.com/Accounts/Authentication/Login">PayCor</a>
-      <a title="Citrix Login" href="https://acrcloud.matrix-ibs.com/Citrix/ACRStoreWeb/">Remote Email</a>
-      <a title="401K"
-        href="https://login.fidelity.com/ftgw/Fidelity/NBPart/Login/Init?AuthRedUrl=https://workplaceservices200.fidelity.com/NBHome.html">401K</a>
-      <a title="Benefits" href="https://clients.hcwbenefits.com/portal2/index.php">Benefits</a>
-      <a title="MasterCard Smart Data"
-        href="https://sdg2.mastercard.com/sdportal/home.view?cobrandHost=sdng.mastercard.com">MasterCard Smart Data</a>
-      <a href="/profile-assessment">Profile Assessment</a>
-    </div>
+{# # About page template # ------------------- # # This template gets loaded
+whenever the site's About page is requested, # because the "About" single-entry
+section's Template setting is set to "about". # # An `entry` variable will be
+automatically passed to this template, which will # be set to the About entry.
+-#} {% extends "_layouts/site" %} {% block main %}
+<div class="container container--small">
+  <h2>Associates</h2>
+  <p>
+    Associates can find links below to their most used sites and applications
+    for work.
+  </p>
+  <div class="associate-links">
+    <a
+      title="PayCor"
+      href="https://enterprise.paycor.com/Accounts/Authentication/Login"
+      >PayCor</a
+    >
+    <a title="Citrix Login" href="https://desktop.acrsupply.com/Citrix/ACRSWeb/"
+      >Remote Email</a
+    >
+    <a
+      title="401K"
+      href="https://login.fidelity.com/ftgw/Fidelity/NBPart/Login/Init?AuthRedUrl=https://workplaceservices200.fidelity.com/NBHome.html"
+      >401K</a
+    >
+    <a title="Benefits" href="https://clients.hcwbenefits.com/portal2/index.php"
+      >Benefits</a
+    >
+    <a
+      title="MasterCard Smart Data"
+      href="https://sdg2.mastercard.com/sdportal/home.view?cobrandHost=sdng.mastercard.com"
+      >MasterCard Smart Data</a
+    >
+    <a href="/profile-assessment">Profile Assessment</a>
   </div>
+</div>
 {% endblock %}
